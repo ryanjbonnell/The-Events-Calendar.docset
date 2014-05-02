@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsTicketsAttendeesTable | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsTicketsAttendeesTable</h1>
+
+
+	<div class="description">
+	
+<p>Class TribeEventsTicketsAttendeesTable</p>
+
+<p>See documentation for WP_List_Table</p>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+WP_List_Table
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>TribeEventsTicketsAttendeesTable</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsTicketsAttendeesTable.html#8-290" title="Go to source code">lib/tickets/tribe-tickets-attendees.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#15-20" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				
+<p>Class constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Class constructor</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="search_box" id="_search_box">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_search_box">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#23-36" title="Go to source code">search_box</a>( <span>string <var>$text</var></span>, <span>string <var>$input_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Display the search box. We don't want Core's search box, because we
+implemented our own jQuery based filter, so this function overrides the parent's
+one and returns empty.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Display the search box. We don't want Core's search box, because we
+implemented our own jQuery based filter, so this function overrides the parent's
+one and returns empty.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br>$text The search button text</dd>
+						<dt><var>$input_id</var></dt>
+						<dd><code>string</code><br>$input_id The search input id</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.1.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="pagination" id="_pagination">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_pagination">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#38-47" title="Go to source code">pagination</a>( <span>mixed <var>$which</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Display the pagination. We are not paginating the attendee list, so it
+returns empty.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Display the pagination. We are not paginating the attendee list, so it
+returns empty.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.1.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_user_can" id="_ajax_user_can">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_user_can">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#49-57" title="Go to source code">ajax_user_can</a>( )</code>
+
+			<div class="description short">
+				
+<p>Checks the current user's permissions</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Checks the current user's permissions</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.1.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_columns" id="_get_columns">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_columns">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#59-77" title="Go to source code">get_columns</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get a list of columns. The format is: 'internal-name' =&gt; 'Title'</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get a list of columns. The format is: 'internal-name' =&gt; 'Title'</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column_default" id="_column_default">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column_default">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#80-93" title="Go to source code">column_default</a>( <span>mixed <var>$item</var></span>, <span>mixed <var>$column</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Handler for the columns that don't have a specific column_{name} handler
+function.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the columns that don't have a specific column_{name} handler
+function.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>mixed</code><br>$item</dd>
+						<dt><var>$column</var></dt>
+						<dd><code>mixed</code><br>$column</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column_cb" id="_column_cb">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column_cb">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#95-104" title="Go to source code">column_cb</a>( <span>mixed <var>$item</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Handler for the checkbox column</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the checkbox column</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>mixed</code><br>$item</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column_order_id" id="_column_order_id">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column_order_id">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#106-122" title="Go to source code">column_order_id</a>( <span>mixed <var>$item</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Handler for the order id column</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the order id column</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>mixed</code><br>$item</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column_order_status" id="_column_order_status">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column_order_status">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#124-151" title="Go to source code">column_order_status</a>( <span>mixed <var>$item</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Handler for the order status column</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the order status column</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>mixed</code><br>$item</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column_check_in" id="_column_check_in">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column_check_in">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#153-165" title="Go to source code">column_check_in</a>( <span>mixed <var>$item</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Handler for the check in column</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the check in column</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>mixed</code><br>$item</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="single_row" id="_single_row">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_single_row">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#167-183" title="Go to source code">single_row</a>( <span>object <var>$item</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Generates content for a single row of the table</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Generates content for a single row of the table</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd><code>object</code><br>$item The current item</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="extra_tablenav" id="_extra_tablenav">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_extra_tablenav">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#186-208" title="Go to source code">extra_tablenav</a>( <span>mixed <var>$which</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Extra controls to be displayed between bulk actions and pagination.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Extra controls to be displayed between bulk actions and pagination.</p>
+
+<p>Used for the Print, Email and Export buttons, and for the jQuery based
+search.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_bulk_actions" id="_get_bulk_actions">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_bulk_actions">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#210-221" title="Go to source code">get_bulk_actions</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get an associative array ( option_name =&gt; option_title ) with the list of
+bulk actions available on this table.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get an associative array ( option_name =&gt; option_title ) with the list of
+bulk actions available on this table.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="process_bulk_action" id="_process_bulk_action">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_process_bulk_action">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#224-265" title="Go to source code">process_bulk_action</a>( )</code>
+
+			<div class="description short">
+				
+<p>Handler for the different bulk actions</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handler for the different bulk actions</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="prepare_items" id="_prepare_items">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_prepare_items">#</a>
+			<code><a href="source-class-TribeEventsTicketsAttendeesTable.html#267-287" title="Go to source code">prepare_items</a>( )</code>
+
+			<div class="description short">
+				
+<p>Prepares the list of items for displaying.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Prepares the list of items for displaying.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

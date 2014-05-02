@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsCache | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsCache</h1>
+
+
+	<div class="description">
+	
+<p>Manage setting and expiring cached data</p>
+
+<p>Select actions can be used to force cached data to expire. Implemented so
+far: - save_post</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsCache.html#3-91" title="Go to source code">lib/tribe-events-cache.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="setup" id="_setup">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup">#</a>
+			<code><a href="source-class-TribeEventsCache.html#15-17" title="Go to source code">setup</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set" id="_set">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set">#</a>
+			<code><a href="source-class-TribeEventsCache.html#19-35" title="Go to source code">set</a>( <span>string <var>$id</var></span>, <span>mixed <var>$value</var></span>, <span>integer <var>$expiration</var> = <span class="php-num">0</span></span>, <span>string <var>$expiration_trigger</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>string</code><br>$id</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br>$value</dd>
+						<dt><var>$expiration</var></dt>
+						<dd><code>integer</code><br>$expiration</dd>
+						<dt><var>$expiration_trigger</var></dt>
+						<dd><code>string</code><br>$expiration_trigger</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get" id="_get">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-TribeEventsCache.html#37-45" title="Go to source code">get</a>( <span>string <var>$id</var></span>, <span>string <var>$expiration_trigger</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>string</code><br>$id</dd>
+						<dt><var>$expiration_trigger</var></dt>
+						<dd><code>string</code><br>$expiration_trigger</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="delete" id="_delete">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_delete">#</a>
+			<code><a href="source-class-TribeEventsCache.html#47-55" title="Go to source code">delete</a>( <span>string <var>$id</var></span>, <span>string <var>$expiration_trigger</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>string</code><br>$id</dd>
+						<dt><var>$expiration_trigger</var></dt>
+						<dd><code>string</code><br>$expiration_trigger</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_id" id="_get_id">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_id">#</a>
+			<code><a href="source-class-TribeEventsCache.html#57-70" title="Go to source code">get_id</a>( <span>string <var>$key</var></span>, <span>string <var>$expiration_trigger</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key</dd>
+						<dt><var>$expiration_trigger</var></dt>
+						<dd><code>string</code><br>$expiration_trigger</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_last_occurrence" id="_get_last_occurrence">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_last_occurrence">#</a>
+			<code><a href="source-class-TribeEventsCache.html#72-79" title="Go to source code">get_last_occurrence</a>( <span>string <var>$action</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set_last_occurrence" id="_set_last_occurrence">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set_last_occurrence">#</a>
+			<code><a href="source-class-TribeEventsCache.html#81-90" title="Go to source code">set_last_occurrence</a>( <span>string <var>$action</var></span>, <span>integer <var>$timestamp</var> = <span class="php-num">0</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action</dd>
+						<dt><var>$timestamp</var></dt>
+						<dd><code>integer</code><br>$timestamp</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped" id="constants">
+		<tr data-order="NO_EXPIRATION" id="NO_EXPIRATION">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEventsCache.html#12" title="Go to source code"><b>NO_EXPIRATION</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#NO_EXPIRATION" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="NON_PERSISTENT" id="NON_PERSISTENT">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEventsCache.html#13" title="Go to source code"><b>NON_PERSISTENT</b></a>
+			</code></td>
+			<td class="value"><code>-<span class="php-num">1</span></code></td>
+			<td class="description"><div>
+				<a href="#NON_PERSISTENT" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

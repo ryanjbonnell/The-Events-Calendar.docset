@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsTemplates | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsTemplates</h1>
+
+
+	<div class="description">
+	
+<p>Handle views and template files.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsTemplates.html#12-731" title="Go to source code">lib/tribe-templates.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="init" id="_init">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_init">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#35-63" title="Go to source code">init</a>( )</code>
+
+			<div class="description short">
+				
+<p>Initialize the Template Yumminess!</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Initialize the Template Yumminess!</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="templateChooser" id="_templateChooser">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_templateChooser">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#65-109" title="Go to source code">templateChooser</a>( <span>string <var>$template</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Pick the correct template to include</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Pick the correct template to include</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$template</var></dt>
+						<dd><code>string</code><br>$template Path to template</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Path to template<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="instantiate_template_class" id="_instantiate_template_class">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_instantiate_template_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#111-127" title="Go to source code">instantiate_template_class</a>( <span>boolean <var>$class</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Include the class for the current view</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Include the class for the current view</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$class</var></dt>
+						<dd><code>boolean</code><br>$class</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+					<h4>Used by</h4>
+					<div class="list">
+							<code><code><a href="function-tribe_initialize_view.html">tribe_initialize_view()</a></code></code> <br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="default_events_template_body_class" id="_default_events_template_body_class">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_default_events_template_body_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#129-139" title="Go to source code">default_events_template_body_class</a>( <span>mixed <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>add body class when default events template is used</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>add body class when default events template is used</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Jessica Yazbek<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="remove_singular_body_class" id="_remove_singular_body_class">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_remove_singular_body_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#141-153" title="Go to source code">remove_singular_body_class</a>( <span>array <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Remove "singular" from available body class</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Remove "singular" from available body class</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes List of classes to filter</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_singular_body_class" id="_add_singular_body_class">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_singular_body_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#155-164" title="Go to source code">add_singular_body_class</a>( <span>array <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add the "singular" body class</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add the "singular" body class</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes List of classes to filter</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="theme_body_class" id="_theme_body_class">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_theme_body_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#166-190" title="Go to source code">theme_body_class</a>( <span>mixed <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add the theme to the body class</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add the theme to the body class</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$classes<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Jessica Yazbek<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="wpHeadFinished" id="_wpHeadFinished">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_wpHeadFinished">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#193-198" title="Go to source code">wpHeadFinished</a>( )</code>
+
+			<div class="description short">
+				
+<p>Determine when wp_head has been triggered.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Determine when wp_head has been triggered.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup_ecp_template" id="_setup_ecp_template">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup_ecp_template">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#201-224" title="Go to source code">setup_ecp_template</a>( <span>WP_Query <var>$query</var></span> )</code>
+
+			<div class="description short">
+				
+<p>This is where the magic happens where we run some ninja code that hooks the
+query to resolve to an events template.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>This is where the magic happens where we run some ninja code that hooks the
+query to resolve to an events template.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd><code>WP_Query</code><br>$query</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="spoof_the_post" id="_spoof_the_post">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_spoof_the_post">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#226-235" title="Go to source code">spoof_the_post</a>( )</code>
+
+			<div class="description short">
+				
+<p>Spoof the global post just once</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Spoof the global post just once</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybe_modify_global_post_title" id="_maybe_modify_global_post_title">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybe_modify_global_post_title">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#238-265" title="Go to source code">maybe_modify_global_post_title</a>( )</code>
+
+			<div class="description short">
+				
+<p>Fix issues where themes display the_title() before the main loop starts.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Fix issues where themes display the_title() before the main loop starts.</p>
+
+<p>With some themes the title of single events can be displayed twice and, more
+crucially, it may result in the event views such as month view prominently
+displaying the title of the most recent event post (which may not even be
+included in the view output).</p>
+
+<p>There's no bulletproof solution to this problem, but for affected themes a
+preventative measure can be turned on by adding the following to
+wp-config.php:<br />
+define( 'TRIBE_MODIFY_GLOBAL_TITLE', true );</p>
+
+<p>Note: this reverses the situation in version 3.2, when this behaviour was
+enabled by default. In response to feedback it will now be disabled by default
+and will need to be turned on by adding the above line.</p>
+
+
+
+
+
+
+					<h4>See</h4>
+					<div class="list">
+							issues #24294, #23260<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="modify_global_post_title" id="_modify_global_post_title">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_modify_global_post_title">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#267-289" title="Go to source code">modify_global_post_title</a>( <span>string <var>$title</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Actually modifies the global $post object's title property, setting it to an
+empty string.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Actually modifies the global $post object's title property, setting it to an
+empty string.</p>
+
+<p>This is expected to be called late on during the wp_title action, but does
+not in fact alter the string it is passed.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$title</var></dt>
+						<dd><code>string</code><br>$title</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<code><code><a href="class-TribeEventsTemplates.html#_maybe_modify_global_post_title">TribeEventsTemplates::maybe_modify_global_post_title()</a></code></code><br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="restore_global_post_title" id="_restore_global_post_title">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_restore_global_post_title">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#292-301" title="Go to source code">restore_global_post_title</a>( )</code>
+
+			<div class="description short">
+				
+<p>Restores the global $post title if it has previously been modified.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Restores the global $post title if it has previously been modified.</p>
+
+
+
+
+
+
+					<h4>See</h4>
+					<div class="list">
+							TribeEventsTemplates::modify_global_post_title().<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_current_page_template" id="_get_current_page_template">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_current_page_template">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#318-346" title="Go to source code">get_current_page_template</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the correct internal page template</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the correct internal page template</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Template path<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_current_template_class" id="_get_current_template_class">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_current_template_class">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#349-377" title="Go to source code">get_current_template_class</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the correct internal page template</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the correct internal page template</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Template class<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="load_ecp_into_page_template" id="_load_ecp_into_page_template">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_load_ecp_into_page_template">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#380-408" title="Go to source code">load_ecp_into_page_template</a>( )</code>
+
+			<div class="description short">
+				
+<p>Loads the contents into the page template</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Loads the contents into the page template</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Page content<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="load_ecp_comments_page_template" id="_load_ecp_comments_page_template">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_load_ecp_comments_page_template">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#411-419" title="Go to source code">load_ecp_comments_page_template</a>( <span>mixed <var>$template</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="showInLoops" id="_showInLoops">
+
+			<td class="attributes"><code>
+				 public static
+				WP_Query
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_showInLoops">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#421-443" title="Go to source code">showInLoops</a>( <span>WP_Query <var>$query</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Checks where we are are and determines if we should show events in the main
+loop</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Checks where we are are and determines if we should show events in the main
+loop</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd><code>WP_Query</code><br>$query</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>WP_Query</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTemplateHierarchy" id="_getTemplateHierarchy">
+
+			<td class="attributes"><code>
+				 public static
+				template
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTemplateHierarchy">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#445-591" title="Go to source code">getTemplateHierarchy</a>( <span>string <var>$template</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Loads theme files in appropriate hierarchy: 1) child theme,</p>
+
+<ol start="2">
+	<li>parent template, 3) plugin resources. will look in the events/</li>
+</ol>
+
+<p>directory in a theme and the views/ directory in the plugin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Loads theme files in appropriate hierarchy: 1) child theme,</p>
+
+<ol start="2">
+	<li>parent template, 3) plugin resources. will look in the events/</li>
+</ol>
+
+<p>directory in a theme and the views/ directory in the plugin</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$template</var></dt>
+						<dd><code>string</code><br>$template template file to search for</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args additional arguments to affect the template path - namespace - plugin_path
+- disable_view_check - bypass the check to see if the view is enabled</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>template</code><br>path<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Matt Wiebe<br />
+					</div>
+					<h4>Used by</h4>
+					<div class="list">
+							<code><code><a href="function-tribe_get_template_part.html">tribe_get_template_part()</a></code></code> <br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="locate_stylesheet" id="_locate_stylesheet">
+
+			<td class="attributes"><code>
+				 public static
+				boolean|string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_locate_stylesheet">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#594-621" title="Go to source code">locate_stylesheet</a>( <span>array|string <var>$stylesheets</var></span>, <span>boolean|string <var>$fallback</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Look for the stylesheets. Fall back to $fallback path if the stylesheets
+can't be located or the array is empty.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Look for the stylesheets. Fall back to $fallback path if the stylesheets
+can't be located or the array is empty.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$stylesheets</var></dt>
+						<dd><code>array|string</code><br>$stylesheets Path to the stylesheet</dd>
+						<dt><var>$fallback</var></dt>
+						<dd><code>boolean|string</code><br>$fallback Path to fallback stylesheet</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean|string</code><br>Path to stylesheet<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybeSpoofQuery" id="_maybeSpoofQuery">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybeSpoofQuery">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#675-701" title="Go to source code">maybeSpoofQuery</a>( )</code>
+
+			<div class="description short">
+				
+<p>Decide if we need to spoof the query.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Decide if we need to spoof the query.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="restoreQuery" id="_restoreQuery">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_restoreQuery">#</a>
+			<code><a href="source-class-TribeEventsTemplates.html#704-730" title="Go to source code">restoreQuery</a>( )</code>
+
+			<div class="description short">
+				
+<p>Restore the original query after spoofing it.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Restore the original query after spoofing it.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="wpHeadComplete" id="$wpHeadComplete">
+			<td class="attributes"><code>
+				public static 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTemplates.html#17-20" title="Go to source code"><var>$wpHeadComplete</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$wpHeadComplete" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Is wp_head complete?</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Is wp_head complete?</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="isMainLoop" id="$isMainLoop">
+			<td class="attributes"><code>
+				public static 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTemplates.html#22-25" title="Go to source code"><var>$isMainLoop</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$isMainLoop" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Is this the main loop?</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Is this the main loop?</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="original_post_title" id="$original_post_title">
+			<td class="attributes"><code>
+				protected static 
+				boolean|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTemplates.html#27-32" title="Go to source code"><var>$original_post_title</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$original_post_title" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>If the global post title has to be modified the original is stored here.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>If the global post title has to be modified the original is stored here.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

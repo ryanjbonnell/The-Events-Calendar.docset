@@ -1,0 +1,7361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEvents | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEvents</h1>
+
+
+	<div class="description">
+	
+<p>The Events Calendar Class</p>
+
+<p>This is where all the magic happens, the unicorns run wild and the
+leprechauns use WordPress to schedule events.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEvents.html#11-4365" title="Go to source code">lib/the-events-calendar.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="instance" id="_instance">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-TribeEvents.html">TribeEvents</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_instance">#</a>
+			<code><a href="source-class-TribeEvents.html#165-175" title="Go to source code">instance</a>( )</code>
+
+			<div class="description short">
+				
+<p>Static Singleton Factory Method</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Static Singleton Factory Method</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-TribeEvents.html">TribeEvents</a></code></code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeEvents.html#177-199" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				
+<p>Initializes plugin variables and sets up WordPress hooks/actions.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Initializes plugin variables and sets up WordPress hooks/actions.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="loadLibraries" id="_loadLibraries">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_loadLibraries">#</a>
+			<code><a href="source-class-TribeEvents.html#201-280" title="Go to source code">loadLibraries</a>( )</code>
+
+			<div class="description short">
+				
+<p>Load all the required library files.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Load all the required library files.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="before_html_data_wrapper" id="_before_html_data_wrapper">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_before_html_data_wrapper">#</a>
+			<code><a href="source-class-TribeEvents.html#282-317" title="Go to source code">before_html_data_wrapper</a>( <span>string <var>$html</var></span> )</code>
+
+			<div class="description short">
+				
+<p>before_html_data_wrapper adds a persistant tag to wrap the event display with
+a way for jQuery to maintain state in the dom. Also has a hook for filtering
+data attributes for inclusion in the dom</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>before_html_data_wrapper adds a persistant tag to wrap the event display with
+a way for jQuery to maintain state in the dom. Also has a hook for filtering
+data attributes for inclusion in the dom</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd><code>string</code><br>$html</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="after_html_data_wrapper" id="_after_html_data_wrapper">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_after_html_data_wrapper">#</a>
+			<code><a href="source-class-TribeEvents.html#319-332" title="Go to source code">after_html_data_wrapper</a>( <span>string <var>$html</var></span> )</code>
+
+			<div class="description short">
+				
+<p>after_html_data_wrapper close out the persistant dom wrapper</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>after_html_data_wrapper close out the persistant dom wrapper</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd><code>string</code><br>$html</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addHooks" id="_addHooks">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addHooks">#</a>
+			<code><a href="source-class-TribeEvents.html#334-454" title="Go to source code">addHooks</a>( )</code>
+
+			<div class="description short">
+				
+<p>Add filters and actions</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add filters and actions</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="promo_banner_prevent_bot" id="_promo_banner_prevent_bot">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_promo_banner_prevent_bot">#</a>
+			<code><a href="source-class-TribeEvents.html#456-462" title="Go to source code">promo_banner_prevent_bot</a>( <span>string <var>$html</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd><code>string</code><br>$html</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="enqueue_for_ajax_calendar" id="_enqueue_for_ajax_calendar">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_enqueue_for_ajax_calendar">#</a>
+			<code><a href="source-class-TribeEvents.html#464-471" title="Go to source code">enqueue_for_ajax_calendar</a>( )</code>
+
+			<div class="description short">
+				
+<p>Enqueue ajax handling for calendar grid view</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Enqueue ajax handling for calendar grid view</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="noindex_months" id="_noindex_months">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_noindex_months">#</a>
+			<code><a href="source-class-TribeEvents.html#473-481" title="Go to source code">noindex_months</a>( )</code>
+
+			<div class="description short">
+				
+<p>Add code to tell search engines not to index the grid view of the calendar.
+Users were seeing 100s of months being indexed.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add code to tell search engines not to index the grid view of the calendar.
+Users were seeing 100s of months being indexed.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="issue_noindex_on_404" id="_issue_noindex_on_404">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_issue_noindex_on_404">#</a>
+			<code><a href="source-class-TribeEvents.html#483-490" title="Go to source code">issue_noindex_on_404</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="print_noindex_meta" id="_print_noindex_meta">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_print_noindex_meta">#</a>
+			<code><a href="source-class-TribeEvents.html#493-495" title="Go to source code">print_noindex_meta</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="init" id="_init">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_init">#</a>
+			<code><a href="source-class-TribeEvents.html#497-524" title="Go to source code">init</a>( )</code>
+
+			<div class="description short">
+				
+<p>Run on applied action init</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Run on applied action init</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybeMigrateDatabase" id="_maybeMigrateDatabase">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybeMigrateDatabase">#</a>
+			<code><a href="source-class-TribeEvents.html#526-575" title="Go to source code">maybeMigrateDatabase</a>( )</code>
+
+			<div class="description short">
+				
+<p>Upgrade the database if an older version of events was installed.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Upgrade the database if an older version of events was installed.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybeSetTECVersion" id="_maybeSetTECVersion">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybeSetTECVersion">#</a>
+			<code><a href="source-class-TribeEvents.html#577-590" title="Go to source code">maybeSetTECVersion</a>( )</code>
+
+			<div class="description short">
+				
+<p>Set the Calendar Version in the options table if it's not already set.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the Calendar Version in the options table if it's not already set.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkAddOnCompatibility" id="_checkAddOnCompatibility">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_checkAddOnCompatibility">#</a>
+			<code><a href="source-class-TribeEvents.html#592-658" title="Go to source code">checkAddOnCompatibility</a>( )</code>
+
+			<div class="description short">
+				
+<p>Check add-ons to make sure they are supported by currently running TEC
+version.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check add-ons to make sure they are supported by currently running TEC
+version.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Paul Hughes<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="initOptions" id="_initOptions">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_initOptions">#</a>
+			<code><a href="source-class-TribeEvents.html#660-674" title="Go to source code">initOptions</a>( )</code>
+
+			<div class="description short">
+				
+<p>Init the settings API and add a hook to add your own setting tabs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Init the settings API and add a hook to add your own setting tabs</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="template_redirect" id="_template_redirect">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_template_redirect">#</a>
+			<code><a href="source-class-TribeEvents.html#676-685" title="Go to source code">template_redirect</a>( )</code>
+
+			<div class="description short">
+				
+<p>Trigger is<sub>404</sub> on single event if no events are found</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Trigger is<sub>404</sub> on single event if no events are found</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="doSettingTabs" id="_doSettingTabs">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_doSettingTabs">#</a>
+			<code><a href="source-class-TribeEvents.html#687-755" title="Go to source code">doSettingTabs</a>( )</code>
+
+			<div class="description short">
+				
+<p>Create setting tabs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Create setting tabs</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="doHelpTab" id="_doHelpTab">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_doHelpTab">#</a>
+			<code><a href="source-class-TribeEvents.html#757-762" title="Go to source code">doHelpTab</a>( )</code>
+
+			<div class="description short">
+				
+<p>Create the help tab</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Create the help tab</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="supportedVersion" id="_supportedVersion">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_supportedVersion">#</a>
+			<code><a href="source-class-TribeEvents.html#764-786" title="Go to source code">supportedVersion</a>( <span>string <var>$system</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Test PHP and WordPress versions for compatibility</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Test PHP and WordPress versions for compatibility</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$system</var></dt>
+						<dd><code>string</code><br>$system - system to be tested such as 'php' or 'wordpress'</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>- is the existing version of the system supported?<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="notSupportedError" id="_notSupportedError">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_notSupportedError">#</a>
+			<code><a href="source-class-TribeEvents.html#788-798" title="Go to source code">notSupportedError</a>( )</code>
+
+			<div class="description short">
+				
+<p>Display a WordPress or PHP incompatibility error</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Display a WordPress or PHP incompatibility error</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_current_menu_item_class_to_events" id="_add_current_menu_item_class_to_events">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_current_menu_item_class_to_events">#</a>
+			<code><a href="source-class-TribeEvents.html#800-824" title="Go to source code">add_current_menu_item_class_to_events</a>( <span>array <var>$items</var></span>, <span>array <var>$args</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add a menu item class to the event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add a menu item class to the event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$items</var></dt>
+						<dd><code>array</code><br>$items</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_events_checkbox_to_menu" id="_add_events_checkbox_to_menu">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_events_checkbox_to_menu">#</a>
+			<code><a href="source-class-TribeEvents.html#826-851" title="Go to source code">add_events_checkbox_to_menu</a>( <span>array <var>$posts</var></span>, <span>array <var>$args</var></span>, <span>string <var>$post_type</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add a checkbox to the menu</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add a checkbox to the menu</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$posts</var></dt>
+						<dd><code>array</code><br>$posts</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args</dd>
+						<dt><var>$post_type</var></dt>
+						<dd><code>string</code><br>$post_type</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="debug" id="_debug">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_debug">#</a>
+			<code><a href="source-class-TribeEvents.html#853-864" title="Go to source code">debug</a>( <span>string <var>$title</var></span>, <span>string|boolean <var>$data</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$format</var> = <span class="php-quote">'log'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Tribe debug function. usage: TribeEvents::debug( 'Message', $data, 'log'
+);</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Tribe debug function. usage: TribeEvents::debug( 'Message', $data, 'log'
+);</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$title</var></dt>
+						<dd><code>string</code><br>$title Message to display in log</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>string|boolean</code><br>$data Optional data to display</dd>
+						<dt><var>$format</var></dt>
+						<dd><code>string</code><br>$format Optional format (log|warning|error|notice)</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Peter Chester<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="renderDebug" id="_renderDebug">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_renderDebug">#</a>
+			<code><a href="source-class-TribeEvents.html#866-883" title="Go to source code">renderDebug</a>( <span>string <var>$title</var></span>, <span>string|boolean <var>$data</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$format</var> = <span class="php-quote">'log'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Render the debug logging to the php error log. This can be over-ridden by
+removing the filter.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Render the debug logging to the php error log. This can be over-ridden by
+removing the filter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$title</var></dt>
+						<dd><code>string</code><br>$title - message to display in log</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>string|boolean</code><br>$data - optional data to display</dd>
+						<dt><var>$format</var></dt>
+						<dd><code>string</code><br>$format - optional format (log|warning|error|notice)</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Peter Chester<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNotice" id="_setNotice">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNotice">#</a>
+			<code><a href="source-class-TribeEvents.html#885-895" title="Go to source code">setNotice</a>( <span>string <var>$key</var></span>, <span>string <var>$notice</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Define an admin notice</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Define an admin notice</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key</dd>
+						<dt><var>$notice</var></dt>
+						<dd><code>string</code><br>$notice</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isNotice" id="_isNotice">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isNotice">#</a>
+			<code><a href="source-class-TribeEvents.html#897-905" title="Go to source code">isNotice</a>( <span>string <var>$key</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Check to see if an admin notice exists</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check to see if an admin notice exists</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeNotice" id="_removeNotice">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeNotice">#</a>
+			<code><a href="source-class-TribeEvents.html#907-920" title="Go to source code">removeNotice</a>( <span>string <var>$key</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Remove an admin notice</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Remove an admin notice</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNotices" id="_getNotices">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNotices">#</a>
+			<code><a href="source-class-TribeEvents.html#922-929" title="Go to source code">getNotices</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the admin notices</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the admin notices</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_event_taxonomy" id="_get_event_taxonomy">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_taxonomy">#</a>
+			<code><a href="source-class-TribeEvents.html#931-938" title="Go to source code">get_event_taxonomy</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the event taxonomy</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the event taxonomy</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_space_to_rss" id="_add_space_to_rss">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_space_to_rss">#</a>
+			<code><a href="source-class-TribeEvents.html#940-953" title="Go to source code">add_space_to_rss</a>( <span>string <var>$title</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add space to the title in RSS</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add space to the title in RSS</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$title</var></dt>
+						<dd><code>string</code><br>$title</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybeAddEventTitle" id="_maybeAddEventTitle">
+
+			<td class="attributes"><code>
+				 public 
+				mixed|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybeAddEventTitle">#</a>
+			<code><a href="source-class-TribeEvents.html#965-998" title="Go to source code">maybeAddEventTitle</a>( <span>string <var>$title</var></span>, <span>string|null <var>$sep</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Add event title where appropriate</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add event title where appropriate</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$title</var></dt>
+						<dd><code>string</code><br>$title</dd>
+						<dt><var>$sep</var></dt>
+						<dd><code>string|null</code><br>$sep</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="emptyEventContent" id="_emptyEventContent">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_emptyEventContent">#</a>
+			<code><a href="source-class-TribeEvents.html#1000-1012" title="Go to source code">emptyEventContent</a>( <span>string <var>$content</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Empty the event content</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Empty the event content</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$content</var></dt>
+						<dd><code>string</code><br>$content</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="accessibleMonthForm" id="_accessibleMonthForm">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_accessibleMonthForm">#</a>
+			<code><a href="source-class-TribeEvents.html#1014-1022" title="Go to source code">accessibleMonthForm</a>( )</code>
+
+			<div class="description short">
+				
+<p>Spoof GET vars to match the request for jumping months or years.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Spoof GET vars to match the request for jumping months or years.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="body_class" id="_body_class">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_body_class">#</a>
+			<code><a href="source-class-TribeEvents.html#1024-1036" title="Go to source code">body_class</a>( <span>array <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update body classes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update body classes</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="post_class" id="_post_class">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_post_class">#</a>
+			<code><a href="source-class-TribeEvents.html#1038-1052" title="Go to source code">post_class</a>( <span>array <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update post classes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update post classes</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="registerPostType" id="_registerPostType">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_registerPostType">#</a>
+			<code><a href="source-class-TribeEvents.html#1211-1245" title="Go to source code">registerPostType</a>( )</code>
+
+			<div class="description short">
+				
+<p>Register the post types.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register the post types.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRewriteSlug" id="_getRewriteSlug">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRewriteSlug">#</a>
+			<code><a href="source-class-TribeEvents.html#1247-1254" title="Go to source code">getRewriteSlug</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the rewrite slug</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the rewrite slug</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRewriteSlugSingular" id="_getRewriteSlugSingular">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRewriteSlugSingular">#</a>
+			<code><a href="source-class-TribeEvents.html#1256-1263" title="Go to source code">getRewriteSlugSingular</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the single post rewrite slug</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the single post rewrite slug</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTaxRewriteSlug" id="_getTaxRewriteSlug">
+
+			<td class="attributes"><code>
+				 public 
+				mixed|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTaxRewriteSlug">#</a>
+			<code><a href="source-class-TribeEvents.html#1265-1273" title="Go to source code">getTaxRewriteSlug</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get taxonomy rewrite slug</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get taxonomy rewrite slug</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTagRewriteSlug" id="_getTagRewriteSlug">
+
+			<td class="attributes"><code>
+				 public 
+				mixed|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTagRewriteSlug">#</a>
+			<code><a href="source-class-TribeEvents.html#1275-1283" title="Go to source code">getTagRewriteSlug</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get tag rewrite slug</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get tag rewrite slug</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVenuePostTypeArgs" id="_getVenuePostTypeArgs">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVenuePostTypeArgs">#</a>
+			<code><a href="source-class-TribeEvents.html#1285-1292" title="Go to source code">getVenuePostTypeArgs</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get venue post type args</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get venue post type args</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getOrganizerPostTypeArgs" id="_getOrganizerPostTypeArgs">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getOrganizerPostTypeArgs">#</a>
+			<code><a href="source-class-TribeEvents.html#1294-1301" title="Go to source code">getOrganizerPostTypeArgs</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get organizer post type args</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get organizer post type args</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generatePostTypeLabels" id="_generatePostTypeLabels">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generatePostTypeLabels">#</a>
+			<code><a href="source-class-TribeEvents.html#1303-1359" title="Go to source code">generatePostTypeLabels</a>( )</code>
+
+			<div class="description short">
+				
+<p>Generate custom post type lables</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Generate custom post type lables</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="updatePostMessage" id="_updatePostMessage">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_updatePostMessage">#</a>
+			<code><a href="source-class-TribeEvents.html#1361-1422" title="Go to source code">updatePostMessage</a>( <span>mixed <var>$messages</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update custom post type messages</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update custom post type messages</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$messages</var></dt>
+						<dd><code>mixed</code><br>$messages</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addVenueAndOrganizerEditor" id="_addVenueAndOrganizerEditor">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addVenueAndOrganizerEditor">#</a>
+			<code><a href="source-class-TribeEvents.html#1424-1437" title="Go to source code">addVenueAndOrganizerEditor</a>( )</code>
+
+			<div class="description short">
+				
+<p>Adds the submenu items for editing the Venues and Organizers. Used to be PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds the submenu items for editing the Venues and Organizers. Used to be PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="displayEventVenueDropdown" id="_displayEventVenueDropdown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_displayEventVenueDropdown">#</a>
+			<code><a href="source-class-TribeEvents.html#1440-1459" title="Go to source code">displayEventVenueDropdown</a>( <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>displays the saved venue dropdown in the event metabox Used to be a PRO only
+feature, but as of 3.0, it is part of Core.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>displays the saved venue dropdown in the event metabox Used to be a PRO only
+feature, but as of 3.0, it is part of Core.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId the event ID for which to create the dropdown</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="displayEventOrganizerDropdown" id="_displayEventOrganizerDropdown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_displayEventOrganizerDropdown">#</a>
+			<code><a href="source-class-TribeEvents.html#1461-1482" title="Go to source code">displayEventOrganizerDropdown</a>( <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>displays the saved organizer dropdown in the event metabox Used to be a PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>displays the saved organizer dropdown in the event metabox Used to be a PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId the event ID for which to create the dropdown</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saved_venues_dropdown" id="_saved_venues_dropdown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saved_venues_dropdown">#</a>
+			<code><a href="source-class-TribeEvents.html#1484-1538" title="Go to source code">saved_venues_dropdown</a>( <span>mixed <var>$current</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$name</var> = <span class="php-quote">'venue[VenueID]'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>helper function for displaying the saved venue dropdown Used to be a PRO only
+feature, but as of 3.0, it is part of Core.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>helper function for displaying the saved venue dropdown Used to be a PRO only
+feature, but as of 3.0, it is part of Core.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$current</var></dt>
+						<dd><code>mixed</code><br>$current the current saved venue</dd>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name the name value for the field</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saved_organizers_dropdown" id="_saved_organizers_dropdown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saved_organizers_dropdown">#</a>
+			<code><a href="source-class-TribeEvents.html#1540-1595" title="Go to source code">saved_organizers_dropdown</a>( <span>mixed <var>$current</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$name</var> = <span class="php-quote">'organizer[OrganizerID]'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>helper function for displaying the saved organizer dropdown Used to be a PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>helper function for displaying the saved organizer dropdown Used to be a PRO
+only feature, but as of 3.0, it is part of Core.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$current</var></dt>
+						<dd><code>mixed</code><br>$current the current saved venue</dd>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name the name value for the field</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="admin_body_class" id="_admin_body_class">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_admin_body_class">#</a>
+			<code><a href="source-class-TribeEvents.html#1597-1611" title="Go to source code">admin_body_class</a>( <span>array <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update admin classes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update admin classes</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addAdminScriptsAndStyles" id="_addAdminScriptsAndStyles">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addAdminScriptsAndStyles">#</a>
+			<code><a href="source-class-TribeEvents.html#1613-1706" title="Go to source code">addAdminScriptsAndStyles</a>( )</code>
+
+			<div class="description short">
+				
+<p>Add admin scripts and styles</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add admin scripts and styles</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDashicon" id="_setDashicon">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDashicon">#</a>
+			<code><a href="source-class-TribeEvents.html#1708-1723" title="Go to source code">setDashicon</a>( <span>mixed <var>$postTypeArgs</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Modify the post type args to set Dashicon if we're in WP 3.8+</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Modify the post type args to set Dashicon if we're in WP 3.8+</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>post type args<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Jessica Yazbek<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="adminIcon" id="_adminIcon">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_adminIcon">#</a>
+			<code><a href="source-class-TribeEvents.html#1725-1757" title="Go to source code">adminIcon</a>( )</code>
+
+			<div class="description short">
+				
+<p>Sets icon css for WP &lt; 3.8</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sets icon css for WP &lt; 3.8</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Jessica Yazbek<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="localizeAdmin" id="_localizeAdmin">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_localizeAdmin">#</a>
+			<code><a href="source-class-TribeEvents.html#1759-1777" title="Go to source code">localizeAdmin</a>( )</code>
+
+			<div class="description short">
+				
+<p>Localize admin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Localize admin</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="printLocalizedAdmin" id="_printLocalizedAdmin">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_printLocalizedAdmin">#</a>
+			<code><a href="source-class-TribeEvents.html#1779-1810" title="Go to source code">printLocalizedAdmin</a>( )</code>
+
+			<div class="description short">
+				
+<p>Output localized admin javascript</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Output localized admin javascript</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="filter_multiday_cutoff" id="_filter_multiday_cutoff">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_filter_multiday_cutoff">#</a>
+			<code><a href="source-class-TribeEvents.html#1812-1830" title="Go to source code">filter_multiday_cutoff</a>( <span>string <var>$cutoff</var></span>, <span>string <var>$default</var></span>, <span>string <var>$option</var></span> )</code>
+
+			<div class="description short">
+				
+<p>We used to store midnight as 12:00. It should be 00:00.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>We used to store midnight as 12:00. It should be 00:00.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cutoff</var></dt>
+						<dd><code>string</code><br>$cutoff</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br>$default</dd>
+						<dt><var>$option</var></dt>
+						<dd><code>string</code><br>$option</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getOptions" id="_getOptions">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getOptions">#</a>
+			<code><a href="source-class-TribeEvents.html#1832-1843" title="Go to source code">getOptions</a>( <span>mixed <var>$force</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Get all options for the Events Calendar</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get all options for the Events Calendar</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>of options<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getOption" id="_getOption">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getOption">#</a>
+			<code><a href="source-class-TribeEvents.html#1845-1867" title="Go to source code">getOption</a>( <span>string <var>$optionName</var></span>, <span>string <var>$default</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Get value for a specific option</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get value for a specific option</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$optionName</var></dt>
+						<dd><code>string</code><br>$optionName name of option</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br>$default default value</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>results of option query<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setOptions" id="_setOptions">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setOptions">#</a>
+			<code><a href="source-class-TribeEvents.html#1869-1895" title="Go to source code">setOptions</a>( <span>array <var>$options</var></span>, <span>boolean <var>$apply_filters</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Saves the options for the plugin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Saves the options for the plugin</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options formatted the same as from getOptions()</dd>
+						<dt><var>$apply_filters</var></dt>
+						<dd><code>boolean</code><br>$apply_filters</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setOption" id="_setOption">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setOption">#</a>
+			<code><a href="source-class-TribeEvents.html#1897-1909" title="Go to source code">setOption</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set an option</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set an option</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br>$value</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNetworkOptions" id="_getNetworkOptions">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNetworkOptions">#</a>
+			<code><a href="source-class-TribeEvents.html#1911-1922" title="Go to source code">getNetworkOptions</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get all network options for the Events Calendar</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get all network options for the Events Calendar</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>of options<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNetworkOption" id="_getNetworkOption">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNetworkOption">#</a>
+			<code><a href="source-class-TribeEvents.html#1924-1945" title="Go to source code">getNetworkOption</a>( <span>string <var>$optionName</var></span>, <span>string <var>$default</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Get value for a specific network option</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get value for a specific network option</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$optionName</var></dt>
+						<dd><code>string</code><br>$optionName name of option</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br>$default default value</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>results of option query<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNetworkOptions" id="_setNetworkOptions">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNetworkOptions">#</a>
+			<code><a href="source-class-TribeEvents.html#1947-1969" title="Go to source code">setNetworkOptions</a>( <span>array <var>$options</var></span>, <span>boolean <var>$apply_filters</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Saves the network options for the plugin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Saves the network options for the plugin</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options formatted the same as from getOptions()</dd>
+						<dt><var>$apply_filters</var></dt>
+						<dd><code>boolean</code><br>$apply_filters</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNetworkOption" id="_setNetworkOption">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNetworkOption">#</a>
+			<code><a href="source-class-TribeEvents.html#1971-1983" title="Go to source code">setNetworkOption</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Saves the network option.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Saves the network option.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name The name of the tribe network option.</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br>$value The value of the option you're setting.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addNetworkOptionsPage" id="_addNetworkOptionsPage">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addNetworkOptionsPage">#</a>
+			<code><a href="source-class-TribeEvents.html#1985-1993" title="Go to source code">addNetworkOptionsPage</a>( )</code>
+
+			<div class="description short">
+				
+<p>Add the network admin options page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add the network admin options page</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="doNetworkSettingTab" id="_doNetworkSettingTab">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_doNetworkSettingTab">#</a>
+			<code><a href="source-class-TribeEvents.html#1995-2004" title="Go to source code">doNetworkSettingTab</a>( )</code>
+
+			<div class="description short">
+				
+<p>Render network admin options view</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Render network admin options view</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPostTypes" id="_getPostTypes">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPostTypes">#</a>
+			<code><a href="source-class-TribeEvents.html#2006-2017" title="Go to source code">getPostTypes</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the post types that are associated with TEC.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the post types that are associated with TEC.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The post types associated with this plugin<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_series_start_date" id="_get_series_start_date">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_series_start_date">#</a>
+			<code><a href="source-class-TribeEvents.html#2019-2032" title="Go to source code">get_series_start_date</a>( <span>integer <var>$post_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>An event can have one or more start dates. This gives the earliest of
+those.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>An event can have one or more start dates. This gives the earliest of
+those.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$post_id</var></dt>
+						<dd><code>integer</code><br>$post_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The date string for the earliest occurrence of the event<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saveAllTabsHidden" id="_saveAllTabsHidden">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saveAllTabsHidden">#</a>
+			<code><a href="source-class-TribeEvents.html#2034-2051" title="Go to source code">saveAllTabsHidden</a>( )</code>
+
+			<div class="description short">
+				
+<p>Save hidden tabs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Save hidden tabs</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cleanupPostVenues" id="_cleanupPostVenues">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_cleanupPostVenues">#</a>
+			<code><a href="source-class-TribeEvents.html#2053-2061" title="Go to source code">cleanupPostVenues</a>( <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Clean up trashed venues</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Clean up trashed venues</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cleanupPostOrganizers" id="_cleanupPostOrganizers">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_cleanupPostOrganizers">#</a>
+			<code><a href="source-class-TribeEvents.html#2063-2071" title="Go to source code">cleanupPostOrganizers</a>( <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Clean up trashed organizers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Clean up trashed organizers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeDeletedPostTypeAssociation" id="_removeDeletedPostTypeAssociation">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeDeletedPostTypeAssociation">#</a>
+			<code><a href="source-class-TribeEvents.html#2073-2088" title="Go to source code">removeDeletedPostTypeAssociation</a>( <span>string <var>$key</var></span>, <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Clean up trashed venues or organizers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Clean up trashed venues or organizers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key</dd>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="truncate" id="_truncate">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_truncate">#</a>
+			<code><a href="source-class-TribeEvents.html#2090-2112" title="Go to source code">truncate</a>( <span>string <var>$text</var></span>, <span>integer <var>$excerpt_length</var> = <span class="php-num">44</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Truncate a given string.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Truncate a given string.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br>$text The text to truncate.</dd>
+						<dt><var>$excerpt_length</var></dt>
+						<dd><code>integer</code><br>$excerpt_length How long you want it to be truncated to.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The truncated text.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="loadTextDomain" id="_loadTextDomain">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_loadTextDomain">#</a>
+			<code><a href="source-class-TribeEvents.html#2114-2123" title="Go to source code">loadTextDomain</a>( )</code>
+
+			<div class="description short">
+				
+<p>Load the text domain.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Load the text domain.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="loadStyle" id="_loadStyle">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_loadStyle">#</a>
+			<code><a href="source-class-TribeEvents.html#2125-2148" title="Go to source code">loadStyle</a>( )</code>
+
+			<div class="description short">
+				
+<p>Load asset packages.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Load asset packages.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDisplay" id="_setDisplay">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDisplay">#</a>
+			<code><a href="source-class-TribeEvents.html#2150-2167" title="Go to source code">setDisplay</a>( )</code>
+
+			<div class="description short">
+				
+<p>Set the displaying class property.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the displaying class property.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="default_view" id="_default_view">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_default_view">#</a>
+			<code><a href="source-class-TribeEvents.html#2169-2192" title="Go to source code">default_view</a>( )</code>
+
+			<div class="description short">
+				
+<p>Returns the default view, providing a fallback if the default is no longer
+availble.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the default view, providing a fallback if the default is no longer
+availble.</p>
+
+<p>This can be useful is for instance a view added by another plugin (such as
+PRO) is stored as the default but can no longer be generated due to the plugin
+being deactivated.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="months" id="_months">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_months">#</a>
+			<code><a href="source-class-TribeEvents.html#2194-2205" title="Go to source code">months</a>( )</code>
+
+			<div class="description short">
+				
+<p>Helper method to return an array of 1-12 for months</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Helper method to return an array of 1-12 for months</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="initMonthNames" id="_initMonthNames">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_initMonthNames">#</a>
+			<code><a href="source-class-TribeEvents.html#2207-2243" title="Go to source code">initMonthNames</a>( )</code>
+
+			<div class="description short">
+				
+<p>Localize month names and their short names and such using $wp_locale.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Localize month names and their short names and such using $wp_locale.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="monthNames" id="_monthNames">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_monthNames">#</a>
+			<code><a href="source-class-TribeEvents.html#2245-2255" title="Go to source code">monthNames</a>( <span>boolean <var>$short</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Helper method to return an array of translated month names or short month
+names</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Helper method to return an array of translated month names or short month
+names</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$short</var></dt>
+						<dd><code>boolean</code><br>$short</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>Translated month names<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="flushRewriteRules" id="_flushRewriteRules">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_flushRewriteRules">#</a>
+			<code><a href="source-class-TribeEvents.html#2257-2268" title="Go to source code">flushRewriteRules</a>( )</code>
+
+			<div class="description short">
+				
+<p>Flush rewrite rules to support custom links</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Flush rewrite rules to support custom links</p>
+
+
+
+
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://codex.wordpress.org/Custom_Queries#Permalinks_for_Custom_Archives">http://codex.wordpress.org/Custom_Queries#Permalinks_for_Custom_Archives</a><br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="eventQueryVars" id="_eventQueryVars">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_eventQueryVars">#</a>
+			<code><a href="source-class-TribeEvents.html#2269-2284" title="Go to source code">eventQueryVars</a>( <span>array <var>$qvars</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds the event specific query vars to WordPress</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds the event specific query vars to WordPress</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$qvars</var></dt>
+						<dd><code>array</code><br>$qvars</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>array of query variables that this plugin understands<br />
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://codex.wordpress.org/Custom_Queries#Permalinks_for_Custom_Archives">http://codex.wordpress.org/Custom_Queries#Permalinks_for_Custom_Archives</a><br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="filterRewriteRules" id="_filterRewriteRules">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_filterRewriteRules">#</a>
+			<code><a href="source-class-TribeEvents.html#2286-2375" title="Go to source code">filterRewriteRules</a>( <span>object <var>$wp_rewrite</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds Event specific rewrite rules.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds Event specific rewrite rules.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$wp_rewrite</var></dt>
+						<dd><code>object</code><br>$wp_rewrite events/ =&gt; /?post_type=tribe_events events/month =&gt;
+/?post_type=tribe_events&amp;eventDisplay=month events/week =&gt;
+/?post_type=tribe_events&amp;eventDisplay=week events/upcoming =&gt;
+/?post_type=tribe_events&amp;eventDisplay=upcoming events/past =&gt;
+/?post_type=tribe_events&amp;eventDisplay=past events/2008-01/#15 =&gt;
+/?post_type=tribe_events&amp;eventDisplay=bydate&amp;eventDate=2008-01-01
+events/category/some-events-category =&gt;
+/?post_type=tribe_events&amp;tribe_event_cat=some-events-category</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getLink" id="_getLink">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getLink">#</a>
+			<code><a href="source-class-TribeEvents.html#2377-2449" title="Go to source code">getLink</a>( <span>string <var>$type</var> = <span class="php-quote">'home'</span></span>, <span>string <var>$secondary</var> = <span class="php-keyword1">false</span></span>, <span>integer|boolean|null <var>$term</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Returns various internal events-related URLs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns various internal events-related URLs</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type type of link. See switch statement for types.</dd>
+						<dt><var>$secondary</var></dt>
+						<dd><code>string</code><br>$secondary for $type = month, pass a YYYY-MM string for a specific month's URL
+for $type = week, pass a Week # string for a specific week's URL</dd>
+						<dt><var>$term</var></dt>
+						<dd><code>integer|boolean|null</code><br>$term</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The link.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="uglyLink" id="_uglyLink">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_uglyLink">#</a>
+			<code><a href="source-class-TribeEvents.html#2451-2497" title="Go to source code">uglyLink</a>( <span>string <var>$type</var> = <span class="php-quote">'home'</span></span>, <span>string <var>$secondary</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>If pretty perms are off, get the ugly link.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>If pretty perms are off, get the ugly link.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type The type of link requested.</dd>
+						<dt><var>$secondary</var></dt>
+						<dd><code>string</code><br>$secondary Some secondary data for the link.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The ugly link.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_google_maps_args" id="_get_google_maps_args">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_google_maps_args">#</a>
+			<code><a href="source-class-TribeEvents.html#2499-2518" title="Go to source code">get_google_maps_args</a>( )</code>
+
+			<div class="description short">
+				
+<p>Returns a link to google maps for the given event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a link to google maps for the given event</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>a fully qualified link to <a
+href="http://maps.google.com/">http://maps.google.com/</a> for this event<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="googleMapLink" id="_googleMapLink">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_googleMapLink">#</a>
+			<code><a href="source-class-TribeEvents.html#2520-2542" title="Go to source code">googleMapLink</a>( <span>string <var>$postId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Returns a link to google maps for the given event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a link to google maps for the given event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>string</code><br>$postId</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>a fully qualified link to <a
+href="http://maps.google.com/">http://maps.google.com/</a> for this event<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fullAddress" id="_fullAddress">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fullAddress">#</a>
+			<code><a href="source-class-TribeEvents.html#2544-2562" title="Go to source code">fullAddress</a>( <span>mixed <var>$post_id</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$includeVenueName</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the full address of an event along with HTML markup. It<br />
+loads the full-address template to generate the HTML</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the full address of an event along with HTML markup. It loads the
+full-address template to generate the HTML</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fullAddressString" id="_fullAddressString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fullAddressString">#</a>
+			<code><a href="source-class-TribeEvents.html#2564-2597" title="Go to source code">fullAddressString</a>( <span>integer|WP_Post <var>$postId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Returns a string version of the full address of an event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a string version of the full address of an event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer|WP_Post</code><br>The post object or post id.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The event's address.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="on_deactivate" id="_on_deactivate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_on_deactivate">#</a>
+			<code><a href="source-class-TribeEvents.html#2599-2607" title="Go to source code">on_deactivate</a>( )</code>
+
+			<div class="description short">
+				
+<p>This plugin does not have any deactivation functionality. Any events,
+categories, options and metadata are left behind.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>This plugin does not have any deactivation functionality. Any events,
+categories, options and metadata are left behind.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dateToTimeStamp" id="_dateToTimeStamp">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_dateToTimeStamp">#</a>
+			<code><a href="source-class-TribeEvents.html#2609-2623" title="Go to source code">dateToTimeStamp</a>( <span>string <var>$date</var></span>, <span>integer <var>$hour</var></span>, <span>integer <var>$minute</var></span>, <span>string <var>$meridian</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Converts a set of inputs to YYYY-MM-DD HH:MM:SS format for MySQL</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Converts a set of inputs to YYYY-MM-DD HH:MM:SS format for MySQL</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date The date.</dd>
+						<dt><var>$hour</var></dt>
+						<dd><code>integer</code><br>$hour The hour of the day.</dd>
+						<dt><var>$minute</var></dt>
+						<dd><code>integer</code><br>$minute The minute of the hour.</dd>
+						<dt><var>$meridian</var></dt>
+						<dd><code>string</code><br>$meridian "am" or "pm".</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The date and time.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTimeFormat" id="_getTimeFormat">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTimeFormat">#</a>
+			<code><a href="source-class-TribeEvents.html#2625-2633" title="Go to source code">getTimeFormat</a>( <span>string <var>$dateFormat</var> = TribeDateUtils::DATEONLYFORMAT </span> )</code>
+
+			<div class="description short">
+				
+<p>Get the datetime format we want.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the datetime format we want.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dateFormat</var></dt>
+						<dd><code>string</code><br>$dateFormat the default date format to use.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The date time format representation we want.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dateHelper" id="_dateHelper">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_dateHelper">#</a>
+			<code><a href="source-class-TribeEvents.html#2635-2657" title="Go to source code">dateHelper</a>( <span>string <var>$date</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Ensures date follows proper YYYY-MM-DD format converts /, - and space chars
+to -</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Ensures date follows proper YYYY-MM-DD format converts /, - and space chars
+to -</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date The date.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The cleaned-up date.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getEventMeta" id="_getEventMeta">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getEventMeta">#</a>
+			<code><a href="source-class-TribeEvents.html#2659-2680" title="Go to source code">getEventMeta</a>( <span>integer <var>$id</var></span>, <span>string <var>$meta</var></span>, <span>boolean <var>$single</var> = <span class="php-keyword1">true</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Adds an alias for get_post_meta so we can do extra stuff to the plugin
+values. If you need the raw unfiltered data, use get_post_meta directly. This is
+mainly for templates.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds an alias for get_post_meta so we can do extra stuff to the plugin
+values. If you need the raw unfiltered data, use get_post_meta directly. This is
+mainly for templates.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>integer</code><br>$id The post id.</dd>
+						<dt><var>$meta</var></dt>
+						<dd><code>string</code><br>$meta The meta key.</dd>
+						<dt><var>$single</var></dt>
+						<dd><code>boolean</code><br>$single Return as string? Or array?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>The meta.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addEventMeta" id="_addEventMeta">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addEventMeta">#</a>
+			<code><a href="source-class-TribeEvents.html#2682-2736" title="Go to source code">addEventMeta</a>( <span>integer <var>$postId</var></span>, <span>WP_Post <var>$post</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds / removes the event details as meta tags to the post.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds / removes the event details as meta tags to the post.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addPostOrigin" id="_addPostOrigin">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addPostOrigin">#</a>
+			<code><a href="source-class-TribeEvents.html#2738-2765" title="Go to source code">addPostOrigin</a>( <span>integer <var>$postId</var></span>, <span>WP_Post <var>$post</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds the '_&lt;posttype&gt;Origin' meta field for a newly inserted
+events-calendar post.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds the '_&lt;posttype&gt;Origin' meta field for a newly inserted
+events-calendar post.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId, the post ID</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post, the post object</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							paulhughes<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="showAuditingData" id="_showAuditingData">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_showAuditingData">#</a>
+			<code><a href="source-class-TribeEvents.html#2767-2776" title="Go to source code">showAuditingData</a>( )</code>
+
+			<div class="description short">
+				
+<p>Shows the event audit trail data.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Shows the event audit trail data.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addToPostAuditTrail" id="_addToPostAuditTrail">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addToPostAuditTrail">#</a>
+			<code><a href="source-class-TribeEvents.html#2778-2806" title="Go to source code">addToPostAuditTrail</a>( <span>integer <var>$postId</var></span>, <span>WP_Post <var>$post</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds to the '_&lt;posttype&gt;AuditTrail' meta field for an events-calendar
+post.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds to the '_&lt;posttype&gt;AuditTrail' meta field for an events-calendar
+post.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId, the post ID</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post, the post object</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							paulhughes<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="publishAssociatedTypes" id="_publishAssociatedTypes">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_publishAssociatedTypes">#</a>
+			<code><a href="source-class-TribeEvents.html#2808-2874" title="Go to source code">publishAssociatedTypes</a>( <span>integer <var>$postID</var></span>, <span>WP_Post <var>$post</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Publishes associated venue/organizer when an event is published</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Publishes associated venue/organizer when an event is published</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postID</var></dt>
+						<dd><code>integer</code><br>$postID, the post ID</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post, the post object</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							nciske<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.6<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="save_venue_data" id="_save_venue_data">
+
+			<td class="attributes"><code>
+				 public 
+				null|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_save_venue_data">#</a>
+			<code><a href="source-class-TribeEvents.html#2876-2903" title="Go to source code">save_venue_data</a>( <span>integer <var>$postID</var> = <span class="php-keyword1">null</span></span>, <span>WP_Post <var>$post</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Make sure the venue meta gets saved</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Make sure the venue meta gets saved</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postID</var></dt>
+						<dd><code>integer</code><br>$postID The venue id.</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post The post object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>null|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_venue_info" id="_get_venue_info">
+
+			<td class="attributes"><code>
+				 public 
+				WP_Query-&gt;posts
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_venue_info">#</a>
+			<code><a href="source-class-TribeEvents.html#2904-2938" title="Go to source code">get_venue_info</a>( <span>integer <var>$p</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$deprecated</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Get venue info.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get venue info.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$p</var></dt>
+						<dd><code>integer</code><br>$p post id</dd>
+						<dt><var>$deprecated</var></dt>
+						<dd><code>mixed</code><br>$deprecated (deprecated)</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>mixed</code><br>$args</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>WP_Query-&gt;posts</code><br>|| false<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="save_organizer_data" id="_save_organizer_data">
+
+			<td class="attributes"><code>
+				 public 
+				null|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_save_organizer_data">#</a>
+			<code><a href="source-class-TribeEvents.html#2940-2965" title="Go to source code">save_organizer_data</a>( <span>integer <var>$postID</var> = <span class="php-keyword1">null</span></span>, <span>WP_Post <var>$post</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Make sure the organizer meta gets saved</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Make sure the organizer meta gets saved</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postID</var></dt>
+						<dd><code>integer</code><br>$postID The organizer id.</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post The post object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>null|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_new_organizer" id="_add_new_organizer">
+
+			<td class="attributes"><code>
+				 public 
+				integer|WP_Error
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_new_organizer">#</a>
+			<code><a href="source-class-TribeEvents.html#2967-3004" title="Go to source code">add_new_organizer</a>( <span>mixed <var>$data</var></span>, <span>null <var>$post</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Add a new Organizer</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add a new Organizer</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>mixed</code><br>$data</dd>
+						<dt><var>$post</var></dt>
+						<dd><code>null</code><br>$post</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer|WP_Error</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_organizer_info" id="_get_organizer_info">
+
+			<td class="attributes"><code>
+				 public 
+				WP_Query-&gt;posts
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_organizer_info">#</a>
+			<code><a href="source-class-TribeEvents.html#3006-3040" title="Go to source code">get_organizer_info</a>( <span>integer <var>$p</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$deprecated</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Get Organizer info.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get Organizer info.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$p</var></dt>
+						<dd><code>integer</code><br>$p post id</dd>
+						<dt><var>$deprecated</var></dt>
+						<dd><code>mixed</code><br>$deprecated (deprecated)</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>mixed</code><br>$args</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>WP_Query-&gt;posts</code><br>|| false<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="EventsChooserBox" id="_EventsChooserBox">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_EventsChooserBox">#</a>
+			<code><a href="source-class-TribeEvents.html#3042-3214" title="Go to source code">EventsChooserBox</a>( <span>WP_Post <var>$event</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds a style chooser to the write post page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds a style chooser to the write post page</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event</var></dt>
+						<dd><code>WP_Post</code><br>$event</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="VenueMetaBox" id="_VenueMetaBox">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_VenueMetaBox">#</a>
+			<code><a href="source-class-TribeEvents.html#3216-3256" title="Go to source code">VenueMetaBox</a>( )</code>
+
+			<div class="description short">
+				
+<p>Adds a style chooser to the write post page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds a style chooser to the write post page</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="OrganizerMetaBox" id="_OrganizerMetaBox">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_OrganizerMetaBox">#</a>
+			<code><a href="source-class-TribeEvents.html#3258-3296" title="Go to source code">OrganizerMetaBox</a>( )</code>
+
+			<div class="description short">
+				
+<p>Adds a style chooser to the write post page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds a style chooser to the write post page</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_form_validate" id="_ajax_form_validate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_form_validate">#</a>
+			<code><a href="source-class-TribeEvents.html#3298-3313" title="Go to source code">ajax_form_validate</a>( )</code>
+
+			<div class="description short">
+				
+<p>Handle ajax requests from admin form</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handle ajax requests from admin form</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="defaultValueReplaceEnabled" id="_defaultValueReplaceEnabled">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_defaultValueReplaceEnabled">#</a>
+			<code><a href="source-class-TribeEvents.html#3315-3327" title="Go to source code">defaultValueReplaceEnabled</a>( )</code>
+
+			<div class="description short">
+				
+<p>Allow programmatic override of defaultValueReplace setting</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Allow programmatic override of defaultValueReplace setting</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="verify_unique_name" id="_verify_unique_name">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_verify_unique_name">#</a>
+			<code><a href="source-class-TribeEvents.html#3329-3348" title="Go to source code">verify_unique_name</a>( <span>string <var>$name</var></span>, <span>string <var>$type</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Verify that a venue or organizer is unique</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Verify that a venue or organizer is unique</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name - name of venue or organizer</dd>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type - post type (venue or organizer)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="nextMonth" id="_nextMonth">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_nextMonth">#</a>
+			<code><a href="source-class-TribeEvents.html#3416-3442" title="Go to source code">nextMonth</a>( <span>string <var>$date</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Given a date (YYYY-MM-DD), returns the first of the next month hat tip to Dan
+Bernadict for method cleanup</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Given a date (YYYY-MM-DD), returns the first of the next month hat tip to Dan
+Bernadict for method cleanup</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Next month's date<br />
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><code><a href="class-OverflowException.html">OverflowException</a></code></code><br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="previousMonth" id="_previousMonth">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_previousMonth">#</a>
+			<code><a href="source-class-TribeEvents.html#3444-3470" title="Go to source code">previousMonth</a>( <span>string <var>$date</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Given a date (YYYY-MM-DD), return the first of the previous month hat tip to
+Dan Bernadict for method cleanup</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Given a date (YYYY-MM-DD), return the first of the previous month hat tip to
+Dan Bernadict for method cleanup</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Previous month's date<br />
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><code><a href="class-OverflowException.html">OverflowException</a></code></code><br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addEventBox" id="_addEventBox">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addEventBox">#</a>
+			<code><a href="source-class-TribeEvents.html#3472-3487" title="Go to source code">addEventBox</a>( )</code>
+
+			<div class="description short">
+				
+<p>Callback for adding the Meta box to the admin page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Callback for adding the Meta box to the admin page</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="eventMetaBox" id="_eventMetaBox">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_eventMetaBox">#</a>
+			<code><a href="source-class-TribeEvents.html#3489-3496" title="Go to source code">eventMetaBox</a>( )</code>
+
+			<div class="description short">
+				
+<p>Include the event editor meta box.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Include the event editor meta box.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDateString" id="_getDateString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDateString">#</a>
+			<code><a href="source-class-TribeEvents.html#3498-3509" title="Go to source code">getDateString</a>( <span>string <var>$date</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Get the date string.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the date string.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date The date.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The pretty date.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDateStringShortened" id="_getDateStringShortened">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDateStringShortened">#</a>
+			<code><a href="source-class-TribeEvents.html#3511-3522" title="Go to source code">getDateStringShortened</a>( <span>string <var>$date</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Get the date string (shortened).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the date string (shortened).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$date</var></dt>
+						<dd><code>string</code><br>$date The date.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The pretty (and shortened) date.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tabIndex" id="_tabIndex">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_tabIndex">#</a>
+			<code><a href="source-class-TribeEvents.html#3524-3532" title="Go to source code">tabIndex</a>( )</code>
+
+			<div class="description short">
+				
+<p>Return the next tab index</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Return the next tab index</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getEvents" id="_getEvents">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getEvents">#</a>
+			<code><a href="source-class-TribeEvents.html#3534-3549" title="Go to source code">getEvents</a>( <span>array <var>$args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Get events. This is like the WP function get_posts().</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get events. This is like the WP function get_posts().</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args Any args for the query.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The posts/events returned.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isEvent" id="_isEvent">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isEvent">#</a>
+			<code><a href="source-class-TribeEvents.html#3551-3571" title="Go to source code">isEvent</a>( <span>integer|WP_Post <var>$event</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Check whether a post is an event.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check whether a post is an event.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event</var></dt>
+						<dd><code>integer|WP_Post</code><br>The event/post id or object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>Is it an event?<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isVenue" id="_isVenue">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isVenue">#</a>
+			<code><a href="source-class-TribeEvents.html#3573-3588" title="Go to source code">isVenue</a>( <span>integer|WP_Post <var>$postId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Check whether a post is a venue.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check whether a post is a venue.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer|WP_Post</code><br>The venue/post id or object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>Is it a venue?<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isOrganizer" id="_isOrganizer">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isOrganizer">#</a>
+			<code><a href="source-class-TribeEvents.html#3590-3605" title="Go to source code">isOrganizer</a>( <span>integer|WP_Post <var>$postId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Check whether a post is an organizer.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check whether a post is an organizer.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer|WP_Post</code><br>The organizer/post id or object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>Is it an organizer?<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_event_link" id="_get_event_link">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_link">#</a>
+			<code><a href="source-class-TribeEvents.html#3607-3672" title="Go to source code">get_event_link</a>( <span>WP_Post <var>$post</var></span>, <span>string <var>$mode</var> = <span class="php-quote">'next'</span></span>, <span>mixed <var>$anchor</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Get a "previous/next post" link for events. Ordered by start date instead of
+ID.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get a "previous/next post" link for events. Ordered by start date instead of
+ID.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$post</var></dt>
+						<dd><code>WP_Post</code><br>$post The post/event.</dd>
+						<dt><var>$mode</var></dt>
+						<dd><code>string</code><br>$mode Either 'next' or 'previous'.</dd>
+						<dt><var>$anchor</var></dt>
+						<dd><code>mixed</code><br>$anchor</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The link (with &lt;a&gt; tags).<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addMetaLinks" id="_addMetaLinks">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addMetaLinks">#</a>
+			<code><a href="source-class-TribeEvents.html#3674-3695" title="Go to source code">addMetaLinks</a>( <span>array <var>$links</var></span>, <span>string <var>$file</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add meta links to the Plugins list page.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add meta links to the Plugins list page.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$links</var></dt>
+						<dd><code>array</code><br>$links The current action links.</dd>
+						<dt><var>$file</var></dt>
+						<dd><code>string</code><br>$file The plugin to see if we are on TEC.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The modified action links array.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dashboardWidget" id="_dashboardWidget">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_dashboardWidget">#</a>
+			<code><a href="source-class-TribeEvents.html#3697-3704" title="Go to source code">dashboardWidget</a>( )</code>
+
+			<div class="description short">
+				
+<p>Register the dashboard widget.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register the dashboard widget.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="outputDashboardWidget" id="_outputDashboardWidget">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_outputDashboardWidget">#</a>
+			<code><a href="source-class-TribeEvents.html#3706-3715" title="Go to source code">outputDashboardWidget</a>( )</code>
+
+			<div class="description short">
+				
+<p>Echo the dashboard widget.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Echo the dashboard widget.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="constructDaysOfWeek" id="_constructDaysOfWeek">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_constructDaysOfWeek">#</a>
+			<code><a href="source-class-TribeEvents.html#3717-3730" title="Go to source code">constructDaysOfWeek</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the localized weekday names.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the localized weekday names.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setPostExceptionThrown" id="_setPostExceptionThrown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setPostExceptionThrown">#</a>
+			<code><a href="source-class-TribeEvents.html#3732-3739" title="Go to source code">setPostExceptionThrown</a>( <span>mixed <var>$thrown</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set the class property postExceptionThrown.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the class property postExceptionThrown.</p>
+
+<p>return void</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPostExceptionThrown" id="_getPostExceptionThrown">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPostExceptionThrown">#</a>
+			<code><a href="source-class-TribeEvents.html#3741-3748" title="Go to source code">getPostExceptionThrown</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the thrown post exception.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the thrown post exception.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="do_action" id="_do_action">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_do_action">#</a>
+			<code><a href="source-class-TribeEvents.html#3750-3773" title="Go to source code">do_action</a>( <span>string <var>$name</var></span>, <span>integer <var>$event_id</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$showMessage</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$extra_args</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>A TEC wrapper of do_action(), basically.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>A TEC wrapper of do_action(), basically.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name The action hook name.</dd>
+						<dt><var>$event_id</var></dt>
+						<dd><code>integer</code><br>$event_id The event this is tied to.</dd>
+						<dt><var>$showMessage</var></dt>
+						<dd><code>boolean</code><br>$showMessage The message to show.</dd>
+						<dt><var>$extra_args</var></dt>
+						<dd><code>mixed</code><br>$extra_args The extra args you want.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybeShowMetaUpsell" id="_maybeShowMetaUpsell">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybeShowMetaUpsell">#</a>
+			<code><a href="source-class-TribeEvents.html#3775-3798" title="Go to source code">maybeShowMetaUpsell</a>( <span>integer <var>$postId</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Echoes upsell stuff, if it should.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Echoes upsell stuff, if it should.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="postIdHelper" id="_postIdHelper">
+
+			<td class="attributes"><code>
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_postIdHelper">#</a>
+			<code><a href="source-class-TribeEvents.html#3801-3820" title="Go to source code">postIdHelper</a>( <span>integer <var>$postId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Helper function for getting Post Id. Accepts null or a post id. If no $post
+object exists, returns false to avoid a PHP NOTICE</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Helper function for getting Post Id. Accepts null or a post id. If no $post
+object exists, returns false to avoid a PHP NOTICE</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$postId</var></dt>
+						<dd><code>integer</code><br>$postId (optional)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer</code><br>post ID<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addToolbarItems" id="_addToolbarItems">
+
+			<td class="attributes"><code>
+				 public 
+				null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addToolbarItems">#</a>
+			<code><a href="source-class-TribeEvents.html#3822-3908" title="Go to source code">addToolbarItems</a>( )</code>
+
+			<div class="description short">
+				
+<p>Add the buttons/dropdown to the admin toolbar</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add the buttons/dropdown to the admin toolbar</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>null</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							2.0.7<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="activationMessage" id="_activationMessage">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_activationMessage">#</a>
+			<code><a href="source-class-TribeEvents.html#3910-3924" title="Go to source code">activationMessage</a>( )</code>
+
+			<div class="description short">
+				
+<p>Displays activation welcome admin notice.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Displays activation welcome admin notice.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.8<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="resetActivationMessage" id="_resetActivationMessage">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_resetActivationMessage">#</a>
+			<code><a href="source-class-TribeEvents.html#3926-3937" title="Go to source code">resetActivationMessage</a>( )</code>
+
+			<div class="description short">
+				
+<p>Resets the option such that the activation message is again displayed on
+reactivation.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Resets the option such that the activation message is again displayed on
+reactivation.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.8<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addViewCalendar" id="_addViewCalendar">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addViewCalendar">#</a>
+			<code><a href="source-class-TribeEvents.html#3939-3952" title="Go to source code">addViewCalendar</a>( )</code>
+
+			<div class="description short">
+				
+<p>Displays the View Calendar link at the top of the Events list in admin.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Displays the View Calendar link at the top of the Events list in admin.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.8<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setInitialMenuMetaBoxes" id="_setInitialMenuMetaBoxes">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setInitialMenuMetaBoxes">#</a>
+			<code><a href="source-class-TribeEvents.html#3954-3984" title="Go to source code">setInitialMenuMetaBoxes</a>( )</code>
+
+			<div class="description short">
+				
+<p>Set the menu-edit-page to default display the events-related items.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the menu-edit-page to default display the events-related items.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.8<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addLinksToPluginActions" id="_addLinksToPluginActions">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addLinksToPluginActions">#</a>
+			<code><a href="source-class-TribeEvents.html#3986-3990" title="Go to source code">addLinksToPluginActions</a>( <span>mixed <var>$actions</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addHelpAdminMenuItem" id="_addHelpAdminMenuItem">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addHelpAdminMenuItem">#</a>
+			<code><a href="source-class-TribeEvents.html#3992-4000" title="Go to source code">addHelpAdminMenuItem</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="prepare_to_fix_tagcloud_links" id="_prepare_to_fix_tagcloud_links">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_prepare_to_fix_tagcloud_links">#</a>
+			<code><a href="source-class-TribeEvents.html#4002-4013" title="Go to source code">prepare_to_fix_tagcloud_links</a>( )</code>
+
+			<div class="description short">
+				
+<p>When the edit-tags.php screen loads, setup filters to fix the tagcloud
+links</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>When the edit-tags.php screen loads, setup filters to fix the tagcloud
+links</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_post_type_to_edit_term_link" id="_add_post_type_to_edit_term_link">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_post_type_to_edit_term_link">#</a>
+			<code><a href="source-class-TribeEvents.html#4015-4032" title="Go to source code">add_post_type_to_edit_term_link</a>( <span>string <var>$link</var></span>, <span>integer <var>$term_id</var></span>, <span>string <var>$taxonomy</var></span>, <span>string <var>$context</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Tag clouds in the admin don't pass the post type arg when getting the edit
+link. If we're on the tag admin in Events post type context, make sure we add
+that arg to the edit tag link</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Tag clouds in the admin don't pass the post type arg when getting the edit
+link. If we're on the tag admin in Events post type context, make sure we add
+that arg to the edit tag link</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$link</var></dt>
+						<dd><code>string</code><br>$link</dd>
+						<dt><var>$term_id</var></dt>
+						<dd><code>integer</code><br>$term_id</dd>
+						<dt><var>$taxonomy</var></dt>
+						<dd><code>string</code><br>$taxonomy</dd>
+						<dt><var>$context</var></dt>
+						<dd><code>string</code><br>$context</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup_listview_in_bar" id="_setup_listview_in_bar">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup_listview_in_bar">#</a>
+			<code><a href="source-class-TribeEvents.html#4034-4043" title="Go to source code">setup_listview_in_bar</a>( <span>array <var>$views</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set up the list view in the view selector in the tribe events bar.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set up the list view in the view selector in the tribe events bar.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$views</var></dt>
+						<dd><code>array</code><br>$views The current views array.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The modified views array.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup_gridview_in_bar" id="_setup_gridview_in_bar">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup_gridview_in_bar">#</a>
+			<code><a href="source-class-TribeEvents.html#4045-4054" title="Go to source code">setup_gridview_in_bar</a>( <span>array <var>$views</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set up the calendar view in the view selector in the tribe events bar.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set up the calendar view in the view selector in the tribe events bar.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$views</var></dt>
+						<dd><code>array</code><br>$views The current views array.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The modified views array.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup_keyword_search_in_bar" id="_setup_keyword_search_in_bar">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup_keyword_search_in_bar">#</a>
+			<code><a href="source-class-TribeEvents.html#4056-4077" title="Go to source code">setup_keyword_search_in_bar</a>( <span>array <var>$filters</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set up the keyword search in the tribe events bar.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set up the keyword search in the tribe events bar.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filters</var></dt>
+						<dd><code>array</code><br>$filters The current filters in the bar array.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The modified filters array.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup_date_search_in_bar" id="_setup_date_search_in_bar">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup_date_search_in_bar">#</a>
+			<code><a href="source-class-TribeEvents.html#4079-4109" title="Go to source code">setup_date_search_in_bar</a>( <span>array <var>$filters</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set up the date search in the tribe events bar.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set up the date search in the tribe events bar.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filters</var></dt>
+						<dd><code>array</code><br>$filters The current filters in the bar array.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The modified filters array.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="remove_hidden_views" id="_remove_hidden_views">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_remove_hidden_views">#</a>
+			<code><a href="source-class-TribeEvents.html#4111-4135" title="Go to source code">remove_hidden_views</a>( <span>array <var>$views</var></span>, <span>boolean <var>$visible</var> = <span class="php-keyword1">true</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Removes views that have been deselected in the Template Settings as hidden
+from the view array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Removes views that have been deselected in the Template Settings as hidden
+from the view array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$views</var></dt>
+						<dd><code>array</code><br>$views The current views array.</dd>
+						<dt><var>$visible</var></dt>
+						<dd><code>boolean</code><br>$visible</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The new views array.<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="enable_day_view" id="_enable_day_view">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_enable_day_view">#</a>
+			<code><a href="source-class-TribeEvents.html#4137-4151" title="Go to source code">enable_day_view</a>( <span>mixed <var>$enabled</var></span>, <span>mixed <var>$view</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Make sure tribe_events_is_view_enabled( 'day' ) returns true This filter
+should be removed when pro is active</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Make sure tribe_events_is_view_enabled( 'day' ) returns true This filter
+should be removed when pro is active</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Jessica Yazbek<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set_tribe_paged" id="_set_tribe_paged">
+
+			<td class="attributes"><code>
+				 public 
+				WP_Query
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set_tribe_paged">#</a>
+			<code><a href="source-class-TribeEvents.html#4153-4165" title="Go to source code">set_tribe_paged</a>( <span>WP_Query <var>$query</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set the tribe_paged query var.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the tribe_paged query var.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd><code>WP_Query</code><br>$query The current query object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>WP_Query</code><br>The modified query object.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="list_ajax_call" id="_list_ajax_call">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_list_ajax_call">#</a>
+			<code><a href="source-class-TribeEvents.html#4169-4254" title="Go to source code">list_ajax_call</a>( )</code>
+
+			<div class="description short">
+				
+<p>The List View AJAX handler.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The List View AJAX handler.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="array_insert_after_key" id="_array_insert_after_key">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_array_insert_after_key">#</a>
+			<code><a href="source-class-TribeEvents.html#4256-4277" title="Go to source code">array_insert_after_key</a>( <span>mixed <var>$key</var></span>, <span>mixed <var>$source_array</var></span>, <span>mixed <var>$insert_array</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Insert an array after a specified key within another array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Insert an array after a specified key within another array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>mixed</code><br>$key</dd>
+						<dt><var>$source_array</var></dt>
+						<dd><code>mixed</code><br>$source_array</dd>
+						<dt><var>$insert_array</var></dt>
+						<dd><code>mixed</code><br>$insert_array</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							codearachnid<br />
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="clear_module_pagination" id="_clear_module_pagination">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_clear_module_pagination">#</a>
+			<code><a href="source-class-TribeEvents.html#4279-4290" title="Go to source code">clear_module_pagination</a>( <span>string <var>$html</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Clear pagination.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Clear pagination.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd><code>string</code><br>$html The current html.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the modified html.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="calendar_ajax_call" id="_calendar_ajax_call">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_calendar_ajax_call">#</a>
+			<code><a href="source-class-TribeEvents.html#4292-4333" title="Go to source code">calendar_ajax_call</a>( )</code>
+
+			<div class="description short">
+				
+<p>The Calendar View AJAX Handler.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The Calendar View AJAX Handler.</p>
+
+
+
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkSuiteIfJustUpdated" id="_checkSuiteIfJustUpdated">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_checkSuiteIfJustUpdated">#</a>
+			<code><a href="source-class-TribeEvents.html#4335-4363" title="Go to source code">checkSuiteIfJustUpdated</a>( )</code>
+
+			<div class="description short">
+				
+<p>Checks to see if any registered TEC-related plugins have been updated just
+now and runs an action if so, so that any upgrade-specific functionality can be
+run.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Checks to see if any registered TEC-related plugins have been updated just
+now and runs an action if so, so that any upgrade-specific functionality can be
+run.</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Paul Hughes<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped" id="constants">
+		<tr data-order="EVENTSERROROPT" id="EVENTSERROROPT">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#17" title="Go to source code"><b>EVENTSERROROPT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'_tribe_events_errors'</span></code></td>
+			<td class="description"><div>
+				<a href="#EVENTSERROROPT" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="OPTIONNAME" id="OPTIONNAME">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#18" title="Go to source code"><b>OPTIONNAME</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_events_calendar_options'</span></code></td>
+			<td class="description"><div>
+				<a href="#OPTIONNAME" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="OPTIONNAMENETWORK" id="OPTIONNAMENETWORK">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#19" title="Go to source code"><b>OPTIONNAMENETWORK</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_events_calendar_network_options'</span></code></td>
+			<td class="description"><div>
+				<a href="#OPTIONNAMENETWORK" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TAXONOMY" id="TAXONOMY">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#20" title="Go to source code"><b>TAXONOMY</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_events_cat'</span></code></td>
+			<td class="description"><div>
+				<a href="#TAXONOMY" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="POSTTYPE" id="POSTTYPE">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#21" title="Go to source code"><b>POSTTYPE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_events'</span></code></td>
+			<td class="description"><div>
+				<a href="#POSTTYPE" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="VENUE_POST_TYPE" id="VENUE_POST_TYPE">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#22" title="Go to source code"><b>VENUE_POST_TYPE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_venue'</span></code></td>
+			<td class="description"><div>
+				<a href="#VENUE_POST_TYPE" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="ORGANIZER_POST_TYPE" id="ORGANIZER_POST_TYPE">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#23" title="Go to source code"><b>ORGANIZER_POST_TYPE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe_organizer'</span></code></td>
+			<td class="description"><div>
+				<a href="#ORGANIZER_POST_TYPE" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="PLUGIN_DOMAIN" id="PLUGIN_DOMAIN">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#24" title="Go to source code"><b>PLUGIN_DOMAIN</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'tribe-events-calendar'</span></code></td>
+			<td class="description"><div>
+				<a href="#PLUGIN_DOMAIN" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="VERSION" id="VERSION">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#25" title="Go to source code"><b>VERSION</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'3.5.1'</span></code></td>
+			<td class="description"><div>
+				<a href="#VERSION" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="FEED_URL" id="FEED_URL">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#26" title="Go to source code"><b>FEED_URL</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'http://tri.be/category/products/feed/'</span></code></td>
+			<td class="description"><div>
+				<a href="#FEED_URL" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="INFO_API_URL" id="INFO_API_URL">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#27" title="Go to source code"><b>INFO_API_URL</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'http://wpapi.org/api/plugin/the-events-calendar.php'</span></code></td>
+			<td class="description"><div>
+				<a href="#INFO_API_URL" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="WP_PLUGIN_URL" id="WP_PLUGIN_URL">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#28" title="Go to source code"><b>WP_PLUGIN_URL</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'http://wordpress.org/extend/plugins/the-events-calendar/'</span></code></td>
+			<td class="description"><div>
+				<a href="#WP_PLUGIN_URL" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="PREFIX" id="PREFIX">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-TribeEvents.html#29" title="Go to source code"><b>PREFIX</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'events'</span></code></td>
+			<td class="description"><div>
+				<a href="#PREFIX" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="notices" id="$notices">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#31-35" title="Go to source code"><var>$notices</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$notices" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Notices to be displayed in the admin</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Notices to be displayed in the admin</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="postTypeArgs" id="$postTypeArgs">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#43-55" title="Go to source code"><var>$postTypeArgs</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$postTypeArgs" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Args for the event post type</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Args for the event post type</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="postVenueTypeArgs" id="$postVenueTypeArgs">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#57-70" title="Go to source code"><var>$postVenueTypeArgs</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$postVenueTypeArgs" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Args for venue post type</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Args for venue post type</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="postOrganizerTypeArgs" id="$postOrganizerTypeArgs">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#72-85" title="Go to source code"><var>$postOrganizerTypeArgs</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$postOrganizerTypeArgs" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Args for organizer post type</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Args for organizer post type</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="taxonomyLabels" id="$taxonomyLabels">
+			<td class="attributes"><code>
+				protected  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#87" title="Go to source code"><var>$taxonomyLabels</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$taxonomyLabels" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tribeUrl" id="$tribeUrl">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#89" title="Go to source code"><var>$tribeUrl</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tribeUrl" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="addOnPath" id="$addOnPath">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#90" title="Go to source code"><var>$addOnPath</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$addOnPath" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="supportPath" id="$supportPath">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#91" title="Go to source code"><var>$supportPath</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$supportPath" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="dotOrgSupportUrl" id="$dotOrgSupportUrl">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#92" title="Go to source code"><var>$dotOrgSupportUrl</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$dotOrgSupportUrl" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="instance" id="$instance">
+			<td class="attributes"><code>
+				protected static 
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#94" title="Go to source code"><var>$instance</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$instance" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="rewriteSlug" id="$rewriteSlug">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#95" title="Go to source code"><var>$rewriteSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$rewriteSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="rewriteSlugSingular" id="$rewriteSlugSingular">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#96" title="Go to source code"><var>$rewriteSlugSingular</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$rewriteSlugSingular" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="taxRewriteSlug" id="$taxRewriteSlug">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#97" title="Go to source code"><var>$taxRewriteSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$taxRewriteSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagRewriteSlug" id="$tagRewriteSlug">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#98" title="Go to source code"><var>$tagRewriteSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tagRewriteSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="monthSlug" id="$monthSlug">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#99" title="Go to source code"><var>$monthSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$monthSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pastSlug" id="$pastSlug">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#100" title="Go to source code"><var>$pastSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pastSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="upcomingSlug" id="$upcomingSlug">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#101" title="Go to source code"><var>$upcomingSlug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$upcomingSlug" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="postExceptionThrown" id="$postExceptionThrown">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#102" title="Go to source code"><var>$postExceptionThrown</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$postExceptionThrown" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="optionsExceptionThrown" id="$optionsExceptionThrown">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#103" title="Go to source code"><var>$optionsExceptionThrown</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$optionsExceptionThrown" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="options" id="$options">
+			<td class="attributes"><code>
+				protected static 
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#104" title="Go to source code"><var>$options</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$options" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="networkOptions" id="$networkOptions">
+			<td class="attributes"><code>
+				protected static 
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#105" title="Go to source code"><var>$networkOptions</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$networkOptions" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="displaying" id="$displaying">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#106" title="Go to source code"><var>$displaying</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$displaying" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginDir" id="$pluginDir">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#107" title="Go to source code"><var>$pluginDir</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginDir" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginPath" id="$pluginPath">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#108" title="Go to source code"><var>$pluginPath</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginPath" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginUrl" id="$pluginUrl">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#109" title="Go to source code"><var>$pluginUrl</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginUrl" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginName" id="$pluginName">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#110" title="Go to source code"><var>$pluginName</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginName" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="date" id="$date">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#111" title="Go to source code"><var>$date</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$date" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tabIndexStart" id="$tabIndexStart">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#112" title="Go to source code"><var>$tabIndexStart</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tabIndexStart" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="form_errors" id="$form_errors">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#114" title="Go to source code"><var>$form_errors</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$form_errors" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="form_message" id="$form_message">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#115" title="Go to source code"><var>$form_message</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$form_message" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="metaTags" id="$metaTags">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#117-133" title="Go to source code"><var>$metaTags</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$metaTags" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="venueTags" id="$venueTags">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#135-146" title="Go to source code"><var>$venueTags</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$venueTags" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="organizerTags" id="$organizerTags">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#148-153" title="Go to source code"><var>$organizerTags</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$organizerTags" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="states" id="$states">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#155" title="Go to source code"><var>$states</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$states" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="currentPostTimestamp" id="$currentPostTimestamp">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#156" title="Go to source code"><var>$currentPostTimestamp</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$currentPostTimestamp" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="daysOfWeekShort" id="$daysOfWeekShort">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#157" title="Go to source code"><var>$daysOfWeekShort</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$daysOfWeekShort" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="daysOfWeek" id="$daysOfWeek">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#158" title="Go to source code"><var>$daysOfWeek</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$daysOfWeek" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="daysOfWeekMin" id="$daysOfWeekMin">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#159" title="Go to source code"><var>$daysOfWeekMin</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$daysOfWeekMin" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="monthsFull" id="$monthsFull">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#160" title="Go to source code"><var>$monthsFull</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$monthsFull" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="monthsShort" id="$monthsShort">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#161" title="Go to source code"><var>$monthsShort</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$monthsShort" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tribeEventsMuDefaults" id="$tribeEventsMuDefaults">
+			<td class="attributes"><code>
+				public static 
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEvents.html#163" title="Go to source code"><var>$tribeEventsMuDefaults</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tribeEventsMuDefaults" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

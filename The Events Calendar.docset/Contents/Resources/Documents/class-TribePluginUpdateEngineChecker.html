@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribePluginUpdateEngineChecker | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribePluginUpdateEngineChecker</h1>
+
+
+	<div class="description">
+	
+<p>A custom plugin update checker.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+				<b>License:</b>
+				<a href="GPL2">or greater.</a><br />
+				<b>Version:</b>
+				1.7<br />
+				<b>Heavily:</b>
+				modified by Darren Ethier<br />
+				<b>Heavily:</b>
+				modified by Peter Chester<br />
+				<b>Original:</b>
+				author (c) Janis Elsts<br />
+				<b>Slighty:</b>
+				modified by Nick Ciske<br />
+				<b>Slighty:</b>
+				modified by Joachim Kudish<br />
+		<b>Located at</b> <a href="source-class-TribePluginUpdateEngineChecker.html#10-825" title="Go to source code">lib/pue/lib/pue_plugin_update_engine.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#38-57" title="Go to source code">__construct</a>( <span>string <var>$pue_update_url</var></span>, <span>string <var>$slug</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$plugin_file</var> = <span class="php-quote">''</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Class constructor.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Class constructor.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$pue_update_url</var></dt>
+						<dd><code>string</code><br>$pue_update_url The URL of the plugin's metadata file.</dd>
+						<dt><var>$slug</var></dt>
+						<dd><code>string</code><br>$slug The plugin's 'slug'.</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options Contains any options that need to be set in the class initialization
+for construct. These are the keys:</dd>
+						<dt><var>$plugin_file</var></dt>
+						<dd><code>string</code><br>$plugin_file fully qualified path to the main plugin file.</dd>
+					</dl></div>
+
+
+
+					<h4>Key</h4>
+					<div class="list">
+							integer $check_period How often to check for updates (in hours). Defaults to
+checking every 12 hours. Set to 0 to disable automatic update checks.<br />
+							string $pue_option_name Where to store book-keeping info about update checks.
+Defaults to 'external_updates-$slug'.<br />
+							string $apikey used to authorize download updates from developer server<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hooks" id="_hooks">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hooks">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#59-86" title="Go to source code">hooks</a>( )</code>
+
+			<div class="description short">
+				
+<p>Install the hooks required to run periodic update checks and inject update
+info into WP data structures. Also other hooks related to the automatic updates
+(such as checking agains API and what not (@from Darren)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Install the hooks required to run periodic update checks and inject update
+info into WP data structures. Also other hooks related to the automatic updates
+(such as checking agains API and what not (@from Darren)</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_slug" id="_get_slug">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_slug">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#90-98" title="Go to source code">get_slug</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the slug</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the slug</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_pue_update_url" id="_get_pue_update_url">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_pue_update_url">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#113-121" title="Go to source code">get_pue_update_url</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the PUE update API endpoint url</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the PUE update API endpoint url</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_plugin_file" id="_get_plugin_file">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_plugin_file">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#135-143" title="Go to source code">get_plugin_file</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the plugin file path</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the plugin file path</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_plugin_name" id="_get_plugin_name">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_plugin_name">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#184-195" title="Go to source code">get_plugin_name</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the plugin name</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the plugin name</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_download_query" id="_get_download_query">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_download_query">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#255-266" title="Go to source code">get_download_query</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the download_query args</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the download_query args</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							1.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="do_license_key_fields" id="_do_license_key_fields">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_do_license_key_fields">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#271-299" title="Go to source code">do_license_key_fields</a>( <span>array <var>$fields</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Inserts license key fields on license key page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Inserts license key fields on license key page</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$fields</var></dt>
+						<dd><code>array</code><br>$fields List of fields</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>Modified list of fields.<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							1.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="do_license_key_javascript" id="_do_license_key_javascript">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_do_license_key_javascript">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#301-345" title="Go to source code">do_license_key_javascript</a>( )</code>
+
+			<div class="description short">
+				
+<p>Inserts the javascript that makes the ajax checking work on the license key
+page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Inserts the javascript that makes the ajax checking work on the license key
+page</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="do_license_key_success_message" id="_do_license_key_success_message">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_do_license_key_success_message">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#347-363" title="Go to source code">do_license_key_success_message</a>( <span>string <var>$message</var></span>, <span>string <var>$tab</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Filter the success message on license key page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Filter the success message on license key page</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd><code>string</code><br>$message</dd>
+						<dt><var>$tab</var></dt>
+						<dd><code>string</code><br>$tab</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_validate_key" id="_ajax_validate_key">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_validate_key">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#365-418" title="Go to source code">ajax_validate_key</a>( )</code>
+
+			<div class="description short">
+				
+<p>Echo JSON results for key validation</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Echo JSON results for key validation</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="display_json_error" id="_display_json_error">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_display_json_error">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#421-457" title="Go to source code">display_json_error</a>( )</code>
+
+			<div class="description short">
+				
+<p>Echo JSON formatted errors</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Echo JSON formatted errors</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="request_info" id="_request_info">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_request_info">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#459-539" title="Go to source code">request_info</a>( <span>array <var>$queryArgs</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Retrieve plugin info from the configured API endpoint.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieve plugin info from the configured API endpoint.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$queryArgs</var></dt>
+						<dd><code>array</code><br>$queryArgs Additional query arguments to append to the request. Optional.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>$pluginInfo<br />
+					</div>
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							wp_remote_get()<br />
+					</div>
+					<h4>Used by</h4>
+					<div class="list">
+							<code><code><a href="class-TribePluginUpdateEngineChecker.html#_request_update">TribePluginUpdateEngineChecker::request_update()</a></code></code> <br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="request_update" id="_request_update">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-TribePluginUpdateUtility.html">TribePluginUpdateUtility</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_request_update">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#541-574" title="Go to source code">request_update</a>( )</code>
+
+			<div class="description short">
+				
+<p>Retrieve the latest update (if any) from the configured API endpoint.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieve the latest update (if any) from the configured API endpoint.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-TribePluginUpdateUtility.html">TribePluginUpdateUtility</a></code></code><br>An instance of TribePluginUpdateUtility, or NULL when no updates are available.<br />
+					</div>
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							<code><code><a href="class-TribePluginUpdateEngineChecker.html#_request_info">TribePluginUpdateEngineChecker::request_info()</a></code></code> <br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="in_plugin_update_message" id="_in_plugin_update_message">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_in_plugin_update_message">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#577-595" title="Go to source code">in_plugin_update_message</a>( <span>mixed <var>$plugin_data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Display the upgrade message in the plugin list under the plugin.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Display the upgrade message in the plugin list under the plugin.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$plugin_data</var></dt>
+						<dd><code>mixed</code><br>$plugin_data</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="display_changelog" id="_display_changelog">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_display_changelog">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#598-603" title="Go to source code">display_changelog</a>( )</code>
+
+			<div class="description short">
+				
+<p>Display a changelog when the api key is missing.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Display a changelog when the api key is missing.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dashboard_dismiss_upgrade" id="_dashboard_dismiss_upgrade">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_dashboard_dismiss_upgrade">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#605-615" title="Go to source code">dashboard_dismiss_upgrade</a>( )</code>
+
+			<div class="description short">
+				
+<p>Update option to dismiss the upgrade notice.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update option to dismiss the upgrade notice.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_installed_version" id="_get_installed_version">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_installed_version">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#617-629" title="Go to source code">get_installed_version</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the currently installed version of the plugin.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the currently installed version of the plugin.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Version number.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_option" id="_get_option">
+
+			<td class="attributes"><code>
+				 public 
+				null|mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_option">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#631-651" title="Go to source code">get_option</a>( <span>string <var>$option_key</var></span>, <span>boolean|mixed <var>$default</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Get MU compatible options.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get MU compatible options.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$option_key</var></dt>
+						<dd><code>string</code><br>$option_key</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>boolean|mixed</code><br>$default</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>null|mixed</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							1.4<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="update_option" id="_update_option">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_update_option">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#653-670" title="Go to source code">update_option</a>( <span>mixed <var>$option_key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update MU compatible options.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update MU compatible options.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$option_key</var></dt>
+						<dd><code>mixed</code><br>$option_key</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br>$value</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							1.4<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="check_for_updates" id="_check_for_updates">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_check_for_updates">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#672-709" title="Go to source code">check_for_updates</a>( <span>array <var>$updates</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Check for plugin updates.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Check for plugin updates.</p>
+
+<p>The results are stored in the DB option specified in $pue_option_name.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$updates</var></dt>
+						<dd><code>array</code><br>$updates</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="inject_info" id="_inject_info">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_inject_info">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#711-734" title="Go to source code">inject_info</a>( <span>mixed <var>$result</var></span>, <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>array|object <var>$args</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Intercept plugins_api() calls that request information about our plugin and
+use the configured API endpoint to satisfy them.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Intercept plugins_api() calls that request information about our plugin and
+use the configured API endpoint to satisfy them.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$result</var></dt>
+						<dd><code>mixed</code><br>$result</dd>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array|object</code><br>$args</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							plugins_api()<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_query_arg_filter" id="_add_query_arg_filter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_query_arg_filter">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#736-749" title="Go to source code">add_query_arg_filter</a>( <span>callable <var>$callback</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Register a callback for filtering query arguments.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register a callback for filtering query arguments.</p>
+
+<p>The callback function should take one argument - an associative array of
+query arguments. It should return a modified array of query arguments.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$callback</var></dt>
+						<dd><code>callable</code><br>$callback</dd>
+					</dl></div>
+
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							add_filter() This method is a convenience wrapper for add_filter().<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_http_request_arg_filter" id="_add_http_request_arg_filter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_http_request_arg_filter">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#751-765" title="Go to source code">add_http_request_arg_filter</a>( <span>callable <var>$callback</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Register a callback for filtering arguments passed to wp_remote_get().</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register a callback for filtering arguments passed to wp_remote_get().</p>
+
+<p>The callback function should take one argument - an associative array of
+arguments - and return a modified array or arguments. See the WP documentation
+on wp_remote_get() for details on what arguments are available and how they
+work.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$callback</var></dt>
+						<dd><code>callable</code><br>$callback</dd>
+					</dl></div>
+
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							add_filter() This method is a convenience wrapper for add_filter().<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="add_result_filter" id="_add_result_filter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_add_result_filter">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#767-784" title="Go to source code">add_result_filter</a>( <span>callable <var>$callback</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Register a callback for filtering the plugin info retrieved from the external
+API.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register a callback for filtering the plugin info retrieved from the external
+API.</p>
+
+<p>The callback function should take two arguments. If the plugin info was
+retrieved successfully, the first argument passed will be an instance of
+Tribe_PU_PluginInfo. Otherwise, it will be NULL. The second argument will be the
+corresponding return value of wp_remote_get (see WP docs for details).</p>
+
+<p>The callback function should return a new or modified instance of
+Tribe_PU_PluginInfo or NULL.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$callback</var></dt>
+						<dd><code>callable</code><br>$callback</dd>
+					</dl></div>
+
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							add_filter() This method is a convenience wrapper for add_filter().<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="array_insert_after_key" id="_array_insert_after_key">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_array_insert_after_key">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#786-807" title="Go to source code">array_insert_after_key</a>( <span>mixed <var>$key</var></span>, <span>mixed <var>$source_array</var></span>, <span>mixed <var>$insert_array</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Insert an array after a specified key within another array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Insert an array after a specified key within another array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>mixed</code><br>$key</dd>
+						<dt><var>$source_array</var></dt>
+						<dd><code>mixed</code><br>$source_array</dd>
+						<dt><var>$insert_array</var></dt>
+						<dd><code>mixed</code><br>$insert_array</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							codearachnid<br />
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							1.3<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="return_install_key" id="_return_install_key">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_return_install_key">#</a>
+			<code><a href="source-class-TribePluginUpdateEngineChecker.html#809-824" title="Go to source code">return_install_key</a>( <span>array <var>$keys</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Add this plugin key to the list of keys</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add this plugin key to the list of keys</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$keys</var></dt>
+						<dd><code>array</code><br>$keys</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$keys<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Peter Chester<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							1.6<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="check_period" id="$check_period">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#30" title="Go to source code"><var>$check_period</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$check_period" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pue_option_name" id="$pue_option_name">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#31" title="Go to source code"><var>$pue_option_name</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pue_option_name" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="json_error" id="$json_error">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#32" title="Go to source code"><var>$json_error</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$json_error" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="api_secret_key" id="$api_secret_key">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#33" title="Go to source code"><var>$api_secret_key</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$api_secret_key" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="install_key" id="$install_key">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#34" title="Go to source code"><var>$install_key</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$install_key" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="dismiss_upgrade" id="$dismiss_upgrade">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#35" title="Go to source code"><var>$dismiss_upgrade</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$dismiss_upgrade" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pue_install_key" id="$pue_install_key">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribePluginUpdateEngineChecker.html#36" title="Go to source code"><var>$pue_install_key</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pue_install_key" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

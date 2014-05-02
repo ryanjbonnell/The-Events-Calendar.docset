@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeSettingsTab | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeSettingsTab</h1>
+
+
+	<div class="description">
+	
+<p>helper class that creates a settings tab this is a public API, use it to
+create tabs simply by instantiating this class</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				jkudish<br />
+				<b>Since:</b>
+				2.0.5<br />
+		<b>Located at</b> <a href="source-class-TribeSettingsTab.html#7-223" title="Go to source code">lib/tribe-settings-tab.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#41-79" title="Go to source code">__construct</a>( <span>string <var>$id</var></span>, <span>string <var>$name</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>class constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>class constructor</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>string</code><br>$id the tab's id (no spaces or special characters)</dd>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name the tab's visible name</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args additional arguments for the tab</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addTab" id="_addTab">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addTab">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#81-102" title="Go to source code">addTab</a>( <span>array <var>$tabs</var></span> )</code>
+
+			<div class="description short">
+				
+<p>filters the tabs array from TribeSettings and adds the current tab to it does
+not add a tab if it's empty</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>filters the tabs array from TribeSettings and adds the current tab to it does
+not add a tab if it's empty</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tabs</var></dt>
+						<dd><code>array</code><br>$tabs the $tabs from TribeSettings</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$tabs the filtered tabs<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addAllTabs" id="_addAllTabs">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addAllTabs">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#104-115" title="Go to source code">addAllTabs</a>( <span>array <var>$allTabs</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds this tab to the list of total tabs, even if it is not displayed.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds this tab to the list of total tabs, even if it is not displayed.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$allTabs</var></dt>
+						<dd><code>array</code><br>$allTabs All the tabs from TribeSettings.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$allTabs All the tabs.<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							PaulHughes01<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.1<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addFields" id="_addFields">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addFields">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#118-134" title="Go to source code">addFields</a>( <span>array <var>$fields</var></span> )</code>
+
+			<div class="description short">
+				
+<p>filters the fields array from TribeSettings and adds the current tab's fields
+to it</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>filters the fields array from TribeSettings and adds the current tab's fields
+to it</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$fields</var></dt>
+						<dd><code>array</code><br>$field the $fields from TribeSettings</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$fields the filtered fields<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="showSaveTab" id="_showSaveTab">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_showSaveTab">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#136-149" title="Go to source code">showSaveTab</a>( <span>array <var>$noSaveTabs</var></span> )</code>
+
+			<div class="description short">
+				
+<p>sets whether the current tab should show the save button or not</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sets whether the current tab should show the save button or not</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$noSaveTabs</var></dt>
+						<dd><code>array</code><br>$noSaveTabs the $noSaveTabs from TribeSettings</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$noSaveTabs the filtered non saving tabs<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="doContent" id="_doContent">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_doContent">#</a>
+			<code><a href="source-class-TribeSettingsTab.html#151-221" title="Go to source code">doContent</a>( )</code>
+
+			<div class="description short">
+				
+<p>displays the content for the tab</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>displays the content for the tab</p>
+
+
+
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="id" id="$id">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeSettingsTab.html#17-21" title="Go to source code"><var>$id</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$id" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Tab ID, used in query string and elsewhere</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Tab ID, used in query string and elsewhere</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="name" id="$name">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeSettingsTab.html#23-27" title="Go to source code"><var>$name</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$name" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Tab's name</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Tab's name</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="args" id="$args">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeSettingsTab.html#29-33" title="Go to source code"><var>$args</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$args" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Tab's arguments</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Tab's arguments</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="defaults" id="$defaults">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeSettingsTab.html#35-39" title="Go to source code"><var>$defaults</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$defaults" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Defaults for tabs</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Defaults for tabs</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Tribe_Meta_Factory | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Tribe_Meta_Factory</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+		<b>Located at</b> <a href="source-class-Tribe_Meta_Factory.html#18-228" title="Go to source code">lib/tribe-meta-factory.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#25-27" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="register" id="_register">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_register">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#29-101" title="Go to source code">register</a>( <span>string <var>$meta_id</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>register meta or meta_groups</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>register meta or meta_groups</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+					<h4>Used by</h4>
+					<div class="list">
+							<code><code><a href="function-tribe_register_meta.html">tribe_register_meta()</a></code></code> <br />
+							<code><code><a href="function-tribe_register_meta_group.html">tribe_register_meta_group()</a></code></code> <br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="check_exists" id="_check_exists">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_check_exists">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#103-115" title="Go to source code">check_exists</a>( <span>string <var>$meta_id</var></span>, <span>string <var>$type</var> = <span class="php-quote">'meta'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>check to see if meta item has been defined</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>check to see if meta item has been defined</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta_id</dd>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_args" id="_get_args">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_args">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#117-129" title="Go to source code">get_args</a>( <span>string <var>$meta_id</var></span>, <span>string <var>$type</var> = <span class="php-quote">'meta'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>get meta arguments</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>get meta arguments</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta_id</dd>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>of arguments<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_order" id="_get_order">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_order">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#131-159" title="Go to source code">get_order</a>( <span>string <var>$meta_id</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>get the set order of meta items useful when generically displaying meta for
+skeleton view or bulk assignments</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>get the set order of meta items useful when generically displaying meta for
+skeleton view or bulk assignments</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>of ordered meta ids<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set_visibility" id="_set_visibility">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set_visibility">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#161-174" title="Go to source code">set_visibility</a>( <span>string <var>$meta_id</var></span>, <span>string <var>$type</var> = <span class="php-quote">'meta'</span></span>, <span>boolean <var>$status</var> = <span class="php-keyword1">true</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>set the visibility of a meta item when using a bulk display tag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>set the visibility of a meta item when using a bulk display tag</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta_id</dd>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type</dd>
+						<dt><var>$status</var></dt>
+						<dd><code>boolean</code><br>$status</dd>
+					</dl></div>
+
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="embed_classes" id="_embed_classes">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_embed_classes">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#176-202" title="Go to source code">embed_classes</a>( <span>string <var>$template</var></span>, <span>array <var>$classes</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>embed css classes for templating the meta item on display</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>embed css classes for templating the meta item on display</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$template</var></dt>
+						<dd><code>string</code><br>$template</dd>
+						<dt><var>$classes</var></dt>
+						<dd><code>array</code><br>$classes</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>$template<br />
+					</div>
+
+
+					<h4>Used by</h4>
+					<div class="list">
+							<code><code><a href="class-Tribe_Meta_Factory.html#_template">Tribe_Meta_Factory::template()</a></code></code><br>for css classes<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="template" id="_template">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_template">#</a>
+			<code><a href="source-class-Tribe_Meta_Factory.html#204-227" title="Go to source code">template</a>( <span>string <var>$label</var></span>, <span>string <var>$meta</var></span>, <span>string <var>$meta_id</var></span>, <span>string <var>$type</var> = <span class="php-quote">'meta'</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>return a completed meta template for display</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>return a completed meta template for display</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$label</var></dt>
+						<dd><code>string</code><br>$label</dd>
+						<dt><var>$meta</var></dt>
+						<dd><code>string</code><br>$meta</dd>
+						<dt><var>$meta_id</var></dt>
+						<dd><code>string</code><br>$meta_id</dd>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>$html finished meta item for display<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							<a
+href="mailto:tim&#64;imaginesimplicity.com">tim&#64;<!---->imaginesimplicity.com</a><br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+					<h4>Uses</h4>
+					<div class="list">
+							<code><code><a href="class-Tribe_Meta_Factory.html#_embed_classes">Tribe_Meta_Factory::embed_classes()</a></code></code><br>for css classes<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped" id="constants">
+		<tr data-order="META_IDS" id="META_IDS">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name"><code>
+					<a href="source-class-Tribe_Meta_Factory.html#23" title="Go to source code"><b>META_IDS</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-quote">'meta_ids'</span></code></td>
+			<td class="description"><div>
+				<a href="#META_IDS" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="meta" id="$meta">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Tribe_Meta_Factory.html#20" title="Go to source code"><var>$meta</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$meta" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="meta_group" id="$meta_group">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Tribe_Meta_Factory.html#21" title="Go to source code"><var>$meta_group</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$meta_group" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

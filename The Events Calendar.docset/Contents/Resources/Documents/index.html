@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js"></script>
+	<script type="text/javascript" src="elementlist.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content">
+	<h1>The Events Calendar</h1>
+
+
+
+
+
+<h2>Classes summary</h2>
+<table class="summary table table-bordered table-striped" id="classes">
+<tr>
+	<td class="name"><a href="class-stdClass.html">stdClass</a></td>
+	<td>
+<!-- by Texy2! --></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Amalgamator.html">Tribe_Amalgamator</a></td>
+	<td>Merge pre-3.0 duplicate venues and organizers</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Events_List_Template.html">Tribe_Events_List_Template</a></td>
+	<td>List view template class</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Events_Month_Template.html">Tribe_Events_Month_Template</a></td>
+	<td>Grid view template class</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Events_Single_Event_Template.html">Tribe_Events_Single_Event_Template</a></td>
+	<td>Single event template class</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Meta_Factory.html">Tribe_Meta_Factory</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_PU_PluginInfo.html">Tribe_PU_PluginInfo</a></td>
+	<td>A container class for holding and transforming various plugin metadata.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Register_Meta.html">Tribe_Register_Meta</a></td>
+	<td>Event Meta Register</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Tribe_Template_Factory.html">Tribe_Template_Factory</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeAppShop.html">TribeAppShop</a></td>
+	<td>Class that handles the integration with our Shop App API</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeDateUtils.html">TribeDateUtils</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEvents.html">TribeEvents</a></td>
+	<td>The Events Calendar Class</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsAdminList.html">TribeEventsAdminList</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsAPI.html">TribeEventsAPI</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsBar.html">TribeEventsBar</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsCache.html">TribeEventsCache</a></td>
+	<td>Manage setting and expiring cached data</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsCacheListener.html">TribeEventsCacheListener</a></td>
+	<td>Listen for events and update their timestamps</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImport.html">TribeEventsImport</a></td>
+	<td>Import events from 1.x version of The Events Calendar to 2.x.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_AdminPage.html">TribeEventsImporter_AdminPage</a></td>
+	<td>Class TribeEventsImporter_AdminPage</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_ColumnMapper.html">TribeEventsImporter_ColumnMapper</a></td>
+	<td>Class TribeEventsImporter_ColumnMapper</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileImporter.html">TribeEventsImporter_FileImporter</a></td>
+	<td>Class TribeEventsImporter_FileImporter</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileImporter_Events.html">TribeEventsImporter_FileImporter_Events</a></td>
+	<td>Class TribeEventsImporter_FileImporter_Events</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileImporter_Organizers.html">TribeEventsImporter_FileImporter_Organizers</a></td>
+	<td>Class TribeEventsImporter_FileImporter_Organizers</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileImporter_Venues.html">TribeEventsImporter_FileImporter_Venues</a></td>
+	<td>Class TribeEventsImporter_FileImporter_Venues</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileReader.html">TribeEventsImporter_FileReader</a></td>
+	<td>Class TribeEventsImporter_FileReader</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_FileUploader.html">TribeEventsImporter_FileUploader</a></td>
+	<td>Class TribeEventsImporter_FileUploader</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsImporter_Plugin.html">TribeEventsImporter_Plugin</a></td>
+	<td>Class TribeEventsImporter_Plugin</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsListWidget.html">TribeEventsListWidget</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsQuery.html">TribeEventsQuery</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsSupport.html">TribeEventsSupport</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTemplates.html">TribeEventsTemplates</a></td>
+	<td>Handle views and template files.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTicketObject.html">TribeEventsTicketObject</a></td>
+	<td>Generic object to hold information about a single ticket</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTickets.html">TribeEventsTickets</a></td>
+	<td>Abstract class with the API definition and common functionality for Tribe
+Tickets Pro. Providers for this functionality need to extend this class. For a
+functional example of how this works see Tribe WooTickets.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTicketsAttendeesTable.html">TribeEventsTicketsAttendeesTable</a></td>
+	<td>Class TribeEventsTicketsAttendeesTable</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTicketsMetabox.html">TribeEventsTicketsMetabox</a></td>
+	<td>Class in charge of registering and displaying the tickets metabox in the event
+edit screen. Metabox will only be added if there's a Tickets Pro provider (child
+of TribeTickets) available.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsTicketsPro.html">TribeEventsTicketsPro</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsUpdate.html">TribeEventsUpdate</a></td>
+	<td>Update class, contains functions to run on update</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsViewHelpers.html">TribeEventsViewHelpers</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeField.html">TribeField</a></td>
+	<td>helper class that creates fields for use in Settings, MetaBoxes, Users,
+anywhere. Instantiate it whenever you need a field</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribePluginUpdateEngineChecker.html">TribePluginUpdateEngineChecker</a></td>
+	<td>A custom plugin update checker.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribePluginUpdateUtility.html">TribePluginUpdateUtility</a></td>
+	<td>A simple container class for holding information about an available update.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeRecurringEventCleanup.html">TribeRecurringEventCleanup</a></td>
+	<td>Converts recurring events to single instances and back when pro plugin is
+activated or deactivated</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeSettings.html">TribeSettings</a></td>
+	<td>helper class that allows registration of settings this is a static class &amp;
+uses the singleton design method instantiation takes place in TribeEvents</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeSettingsTab.html">TribeSettingsTab</a></td>
+	<td>helper class that creates a settings tab this is a public API, use it to create
+tabs simply by instantiating this class</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeValidate.html">TribeValidate</a></td>
+	<td>helper class that validates fields for use in Settings, MetaBoxes, Users,
+anywhere. Instantiate whenever you want to validate a field</td>
+</tr>
+</table>
+
+
+
+<h2>Exceptions summary</h2>
+<table class="summary table table-bordered table-striped" id="exceptions">
+<tr>
+	<td class="name"><a href="class-Exception.html">Exception</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-LogicException.html">LogicException</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-OverflowException.html">OverflowException</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-RuntimeException.html">RuntimeException</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsOptionsException.html">TribeEventsOptionsException</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-TribeEventsPostException.html">TribeEventsPostException</a></td>
+	<td></td>
+</tr>
+</table>
+
+
+<h2>Functions summary</h2>
+<table class="summary table table-bordered table-striped" id="functions">
+<tr>
+	<td class="name"><a href="function-events_list_load_widgets.html">events_list_load_widgets</a></td>
+	<td>Function that registers widget.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-load_tribe_debug_bar.html">load_tribe_debug_bar</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_address_exists.html">tribe_address_exists</a></td>
+	<td>Address Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_count_hierarchical.html">tribe_count_hierarchical</a></td>
+	<td>Count items in a hierarchical array</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_count_hierarchical_keys.html">tribe_count_hierarchical_keys</a></td>
+	<td>Count keys in a hierarchical array</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_create_event.html">tribe_create_event</a></td>
+	<td>Create an Event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_create_organizer.html">tribe_create_organizer</a></td>
+	<td>Create an Organizer</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_create_venue.html">tribe_create_venue</a></td>
+	<td>Create a Venue</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_delete_event.html">tribe_delete_event</a></td>
+	<td>Delete an Event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_delete_organizer.html">tribe_delete_organizer</a></td>
+	<td>Delete an Organizer</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_delete_venue.html">tribe_delete_venue</a></td>
+	<td>Delete a Venue</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_current_events_slug.html">tribe_display_current_events_slug</a></td>
+	<td>display the events slug description</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_current_ical_link.html">tribe_display_current_ical_link</a></td>
+	<td>display the iCal description</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_current_single_event_slug.html">tribe_display_current_single_event_slug</a></td>
+	<td>display the event single slug description</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_meta.html">tribe_display_meta</a></td>
+	<td>Simple diplay of meta tag</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_meta_group.html">tribe_display_meta_group</a></td>
+	<td>Simple diplay of meta group tag</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_display_the_event_meta.html">tribe_display_the_event_meta</a></td>
+	<td>Simple display of meta group tag</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_embed_google_map.html">tribe_embed_google_map</a></td>
+	<td>Google Map Embed Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_beginning_of_day.html">tribe_event_beginning_of_day</a></td>
+	<td>Returns formatted date for the official beginning of the day according to the
+Multi-day cutoff time option</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_end_of_day.html">tribe_event_end_of_day</a></td>
+	<td>Returns formatted date for the official end of the day according to the
+Multi-day cutoff time option</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_featured_image.html">tribe_event_featured_image</a></td>
+	<td>return the featured image html to an event (within the loop automatically will
+get event ID)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_format_date.html">tribe_event_format_date</a></td>
+	<td>Formatted Date</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_in_category.html">tribe_event_in_category</a></td>
+	<td>Event in Category Conditional</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_is_all_day.html">tribe_event_is_all_day</a></td>
+	<td>All Day Event Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_is_multiday.html">tribe_event_is_multiday</a></td>
+	<td>Multi-day Event Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_event_link.html">tribe_event_link</a></td>
+	<td>Single Event Link (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_admin_show_cost_field.html">tribe_events_admin_show_cost_field</a></td>
+	<td>conditional tag to determine if the cost field should be shown in the admin
+editors.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_after_html.html">tribe_events_after_html</a></td>
+	<td>HTML After Event (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_before_html.html">tribe_events_before_html</a></td>
+	<td>HTML Before Event (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_disabled_views.html">tribe_events_disabled_views</a></td>
+	<td>Get a list of the views that are disabled</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_enabled_views.html">tribe_events_enabled_views</a></td>
+	<td>Get a list of the views that are enabled</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_event_classes.html">tribe_events_event_classes</a></td>
+	<td>Prints out classes on an event wrapper</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_event_schedule_details.html">tribe_events_event_schedule_details</a></td>
+	<td>Return the details of the start/end date/time.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_current_month_day.html">tribe_events_get_current_month_day</a></td>
+	<td>Used in the month loop. Gets the current day in the month loop</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_current_week.html">tribe_events_get_current_week</a></td>
+	<td>Used in the month loop. Returns the counter for the current week in the month
+loop</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_days_of_week.html">tribe_events_get_days_of_week</a></td>
+	<td>Return an array with the days of the week, numbered with respect to the
+start_of_week WP option</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_filters.html">tribe_events_get_filters</a></td>
+	<td>Return the filters registered in the tribe bar</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_tab_index.html">tribe_events_get_tab_index</a></td>
+	<td>Get and increment tab index in form fields</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_the_excerpt.html">tribe_events_get_the_excerpt</a></td>
+	<td>Effectively aliases WP's get_the_excerpt() function, except that it additionally
+strips shortcodes during ajax requests.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_get_views.html">tribe_events_get_views</a></td>
+	<td>Return the views registered in the tribe bar</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_have_month_days.html">tribe_events_have_month_days</a></td>
+	<td>Used in the month loop. Returns true if there are more calendar days available
+in the loop.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-Tribe_Events_Importer_Load.html">Tribe_Events_Importer_Load</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_is_view_enabled.html">tribe_events_is_view_enabled</a></td>
+	<td>Check if a particular view is enabled</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_list_the_date_headers.html">tribe_events_list_the_date_headers</a></td>
+	<td>Used in list loop, displays the date headers between events in the loop when the
+month / year has changed</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_month_has_events.html">tribe_events_month_has_events</a></td>
+	<td>Returns whether there are any events in the month</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_promo_banner.html">tribe_events_promo_banner</a></td>
+	<td>Display the Events Calendar promo banner</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_resource_url.html">tribe_events_resource_url</a></td>
+	<td>Returns or echoes a url to a file in the Events Calendar plugin resources
+directory</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_single_event_meta.html">tribe_events_single_event_meta</a></td>
+	<td>Return the single event meta</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_tab_index.html">tribe_events_tab_index</a></td>
+	<td>Echo and increment tab index in form fields</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_template_data.html">tribe_events_template_data</a></td>
+	<td>Returns json for javascript templating functions throughout the plugin.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_header_attributes.html">tribe_events_the_header_attributes</a></td>
+	<td>Prints out data attributes used in the template header tags</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_month_day.html">tribe_events_the_month_day</a></td>
+	<td>Used in the month loop. Advances the loop pointer to the next day, and sets that
+day up for use.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_month_day_classes.html">tribe_events_the_month_day_classes</a></td>
+	<td>Used in the month loop. Outputs classes for the current month day, including
+special classes for past / present / future days</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_month_single_event_classes.html">tribe_events_the_month_single_event_classes</a></td>
+	<td>Used in the month loop. Outputs classes for the current single event in the
+month loop</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_next_month_link.html">tribe_events_the_next_month_link</a></td>
+	<td>Display an html link to the next month. Used in the month navigation.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_notices.html">tribe_events_the_notices</a></td>
+	<td>Generates html for any notices that have been queued on the current view</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_the_previous_month_link.html">tribe_events_the_previous_month_link</a></td>
+	<td>Display an html link to the previous month. Used in the month navigation.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_events_title.html">tribe_events_title</a></td>
+	<td>Event Title (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_format_currency.html">tribe_format_currency</a></td>
+	<td>Receives a float and formats it with a currency symbol</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_address.html">tribe_get_address</a></td>
+	<td>Street Address</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_city.html">tribe_get_city</a></td>
+	<td>City</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_cost.html">tribe_get_cost</a></td>
+	<td>Get an event's cost</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_country.html">tribe_get_country</a></td>
+	<td>Country</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_current_month_text.html">tribe_get_current_month_text</a></td>
+	<td>Current Month Text</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_current_template.html">tribe_get_current_template</a></td>
+	<td>Current Template</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_day_link.html">tribe_get_day_link</a></td>
+	<td>Link Event Day</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_days_between.html">tribe_get_days_between</a></td>
+	<td>Accepts two dates and returns the number of days between them</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_dropdown_link_prefix.html">tribe_get_dropdown_link_prefix</a></td>
+	<td>Drop Menu Post Link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_embedded_map.html">tribe_get_embedded_map</a></td>
+	<td>Google Map Embed</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_end_date.html">tribe_get_end_date</a></td>
+	<td>End Date</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_cat_ids.html">tribe_get_event_cat_ids</a></td>
+	<td>Event Category ID's</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_cat_slugs.html">tribe_get_event_cat_slugs</a></td>
+	<td>Event Category slugs</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_categories.html">tribe_get_event_categories</a></td>
+	<td>Event Categories (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_link.html">tribe_get_event_link</a></td>
+	<td>Single Event Link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_meta.html">tribe_get_event_meta</a></td>
+	<td>Event Post Meta</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_taxonomy.html">tribe_get_event_taxonomy</a></td>
+	<td>get the term list by taxonomy (default categories) for a single event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_website_link.html">tribe_get_event_website_link</a></td>
+	<td>Event Website Link (more info)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_event_website_url.html">tribe_get_event_website_url</a></td>
+	<td>Event Website URL</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_events.html">tribe_get_events</a></td>
+	<td>Get Event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_events_link.html">tribe_get_events_link</a></td>
+	<td>Link to All Events</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_events_title.html">tribe_get_events_title</a></td>
+	<td>Event Title</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_formatted_cost.html">tribe_get_formatted_cost</a></td>
+	<td>Returns the event cost complete with currency symbol.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_full_address.html">tribe_get_full_address</a></td>
+	<td>Full Address</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_gridview_link.html">tribe_get_gridview_link</a></td>
+	<td>Link to Grid View</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_listview_link.html">tribe_get_listview_link</a></td>
+	<td>Link to List View</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_listview_past_link.html">tribe_get_listview_past_link</a></td>
+	<td>Link to List View (Past)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_map_link.html">tribe_get_map_link</a></td>
+	<td>Google Map Link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_maximum_cost.html">tribe_get_maximum_cost</a></td>
+	<td>Get the maximum cost of all events.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_meta.html">tribe_get_meta</a></td>
+	<td>Get the meta.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_meta_arg.html">tribe_get_meta_arg</a></td>
+	<td>Get the args for a meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_meta_group.html">tribe_get_meta_group</a></td>
+	<td>Get the meta group.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_meta_template_part.html">tribe_get_meta_template_part</a></td>
+	<td>Get the template part for the meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_minimum_cost.html">tribe_get_minimum_cost</a></td>
+	<td>Get the minimum cost of all events.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_mobile_breakpoint.html">tribe_get_mobile_breakpoint</a></td>
+	<td>Get the breakpoint for switching to mobile styles</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_month_view_date.html">tribe_get_month_view_date</a></td>
+	<td>Month View Date</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_network_option.html">tribe_get_network_option</a></td>
+	<td>Get Network Options</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_next_event_link.html">tribe_get_next_event_link</a></td>
+	<td>Return a link to the next post by start date for the given event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_next_month_link.html">tribe_get_next_month_link</a></td>
+	<td>Link to Next Month</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_next_month_text.html">tribe_get_next_month_text</a></td>
+	<td>Next Month Text</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_option.html">tribe_get_option</a></td>
+	<td>Get Options</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer.html">tribe_get_organizer</a></td>
+	<td>Get Organizer</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_email.html">tribe_get_organizer_email</a></td>
+	<td>Organizer Email</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_id.html">tribe_get_organizer_id</a></td>
+	<td>Organizer ID</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_link.html">tribe_get_organizer_link</a></td>
+	<td>Organizer Page Link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_phone.html">tribe_get_organizer_phone</a></td>
+	<td>Organizer Phone</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_website_link.html">tribe_get_organizer_website_link</a></td>
+	<td>Organizer website link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizer_website_url.html">tribe_get_organizer_website_url</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_organizers.html">tribe_get_organizers</a></td>
+	<td>Get all the organizers</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_past_link.html">tribe_get_past_link</a></td>
+	<td>Link to Past Events</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_phone.html">tribe_get_phone</a></td>
+	<td>Venue Phone Number</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_prev_event_link.html">tribe_get_prev_event_link</a></td>
+	<td>Return a link to the previous post by start date for the given event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_previous_month_link.html">tribe_get_previous_month_link</a></td>
+	<td>Link to Previous Month</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_previous_month_text.html">tribe_get_previous_month_text</a></td>
+	<td>Previous Month Text</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_province.html">tribe_get_province</a></td>
+	<td>Province</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_region.html">tribe_get_region</a></td>
+	<td>Region</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_start_date.html">tribe_get_start_date</a></td>
+	<td>Start Date</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_state.html">tribe_get_state</a></td>
+	<td>State</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_stateprovince.html">tribe_get_stateprovince</a></td>
+	<td>State or Province</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_template_part.html">tribe_get_template_part</a></td>
+	<td>Includes a template part, similar to the WP get template part, but looks in the
+correct directories for Tribe Events templates</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_the_event_meta.html">tribe_get_the_event_meta</a></td>
+	<td>Get the event meta</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_ticket_form.html">tribe_get_ticket_form</a></td>
+	<td>Placeholder function that is used for ticketing plugins meant to be filtered by
+such plugins</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_upcoming_link.html">tribe_get_upcoming_link</a></td>
+	<td>Link to Upcoming Events</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_venue.html">tribe_get_venue</a></td>
+	<td>Get Venue</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_venue_id.html">tribe_get_venue_id</a></td>
+	<td>Venue ID</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_venue_link.html">tribe_get_venue_link</a></td>
+	<td>Venue Link</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_venue_website_link.html">tribe_get_venue_website_link</a></td>
+	<td>Get the link for the venue website.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_venues.html">tribe_get_venues</a></td>
+	<td>Get all the venues</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_view.html">tribe_get_view</a></td>
+	<td>Includes a view file, runs hooks around the view</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_get_zip.html">tribe_get_zip</a></td>
+	<td>Zip Code</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_has_organizer.html">tribe_has_organizer</a></td>
+	<td>Organizer Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_has_past_events.html">tribe_has_past_events</a></td>
+	<td>Used to determine if a link to past events should be displayed.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_has_venue.html">tribe_has_venue</a></td>
+	<td>Venue Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_include_view_list.html">tribe_include_view_list</a></td>
+	<td>Accepts an array of query arguments, retrieves them, and returns the html for
+those events in list view</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_initialize_view.html">tribe_initialize_view</a></td>
+	<td>Instantiate the template class, preparing a view file for use. If no name is
+passed, defaults to the class for the current view</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_bot.html">tribe_is_bot</a></td>
+	<td>tribe_is_bot checks if the visitor is a bot and returns status</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_by_date.html">tribe_is_by_date</a></td>
+	<td>Date View Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_day.html">tribe_is_day</a></td>
+	<td>Single Day Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_event.html">tribe_is_event</a></td>
+	<td>Event Type Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_event_category.html">tribe_is_event_category</a></td>
+	<td>Conditional tag to check if current page is an event category page</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_event_organizer.html">tribe_is_event_organizer</a></td>
+	<td>Conditional tag to check if current page is an event organizer page</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_event_query.html">tribe_is_event_query</a></td>
+	<td>Conditional tag to check if current page is displaying event query</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_event_venue.html">tribe_is_event_venue</a></td>
+	<td>Conditional tag to check if current page is an event venue page</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_in_main_loop.html">tribe_is_in_main_loop</a></td>
+	<td>Determines if we are in the main Loop (home/archives/tags)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_list_view.html">tribe_is_list_view</a></td>
+	<td>Determines if we are in list view.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_month.html">tribe_is_month</a></td>
+	<td>Month view conditional tag</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_new_event_day.html">tribe_is_new_event_day</a></td>
+	<td>New Day Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_organizer.html">tribe_is_organizer</a></td>
+	<td>Organizer Type Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_past.html">tribe_is_past</a></td>
+	<td>Past Loop View Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_showing_all.html">tribe_is_showing_all</a></td>
+	<td>Show All Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_upcoming.html">tribe_is_upcoming</a></td>
+	<td>Upcoming Loop View Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_venue.html">tribe_is_venue</a></td>
+	<td>Venue Type Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_is_view.html">tribe_is_view</a></td>
+	<td>Checks whether we're on a particular view</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_map_cost_array_callback.html">tribe_map_cost_array_callback</a></td>
+	<td>Maps the cost array to make finding the minimum and maximum costs possible.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_meta_event_category_name.html">tribe_meta_event_category_name</a></td>
+	<td>Event Category Name</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_meta_event_tags.html">tribe_meta_event_tags</a></td>
+	<td>Event Tags (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_multi_line_remove_empty_lines.html">tribe_multi_line_remove_empty_lines</a></td>
+	<td>helper function to remove empty lines from multi-line strings</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_prepare_for_json.html">tribe_prepare_for_json</a></td>
+	<td>Function to prepare content for use as a value in a json encoded string destined
+for storage on a html data attribute. Hence the double quote fun, especially in
+case they pass html encoded " along. Any of those getting through to the data
+att will break jquery's parseJSON method. Themers can use this function to
+prepare data they may want to send to tribe_events_template_data() in the
+templates, and we use it in that function ourselves.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_register_meta.html">tribe_register_meta</a></td>
+	<td>register a meta item</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_register_meta_group.html">tribe_register_meta_group</a></td>
+	<td>register a meta group</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_set_meta_label.html">tribe_set_meta_label</a></td>
+	<td>Set the meta label for the meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_set_meta_priority.html">tribe_set_meta_priority</a></td>
+	<td>Set the meta priority to manage positioning.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_set_meta_value.html">tribe_set_meta_value</a></td>
+	<td>Set meta value for meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_set_the_meta_template.html">tribe_set_the_meta_template</a></td>
+	<td>Set the template for the meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_set_the_meta_visibility.html">tribe_set_the_meta_visibility</a></td>
+	<td>Set the visibility of the meta object.</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_show_google_map_link.html">tribe_show_google_map_link</a></td>
+	<td>Google Map Link Test</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_show_month.html">tribe_show_month</a></td>
+	<td>Display a month</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_the_next_event_link.html">tribe_the_next_event_link</a></td>
+	<td>Link to Next Event (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_the_prev_event_link.html">tribe_the_prev_event_link</a></td>
+	<td>Link to Previous Event (Display)</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_update_event.html">tribe_update_event</a></td>
+	<td>Update an Event</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_update_option.html">tribe_update_option</a></td>
+	<td>Update Option</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_update_organizer.html">tribe_update_organizer</a></td>
+	<td>Update an Organizer</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-tribe_update_venue.html">tribe_update_venue</a></td>
+	<td>Update a Venue</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-TribeEventsImporter_autoload.html">TribeEventsImporter_autoload</a></td>
+	<td></td>
+</tr>
+</table>
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

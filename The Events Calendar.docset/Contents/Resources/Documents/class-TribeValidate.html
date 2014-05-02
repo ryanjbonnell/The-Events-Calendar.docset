@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeValidate | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeValidate</h1>
+
+
+	<div class="description">
+	
+<p>helper class that validates fields for use in Settings, MetaBoxes, Users,
+anywhere. Instantiate whenever you want to validate a field</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				jkudish<br />
+				<b>Since:</b>
+				2.0.5<br />
+		<b>Located at</b> <a href="source-class-TribeValidate.html#7-493" title="Go to source code">lib/tribe-validate.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeValidate.html#55-121" title="Go to source code">__construct</a>( <span>string <var>$field_id</var></span>, <span>array <var>$field</var></span>, <span>mixed <var>$value</var></span>, <span>mixed <var>$additional_args</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Class constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Class constructor</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field_id</var></dt>
+						<dd><code>string</code><br>$field_id the field ID to validate</dd>
+						<dt><var>$field</var></dt>
+						<dd><code>array</code><br>$field_id the field object to validate</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br>$value the value to validate</dd>
+						<dt><var>$additional_args</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>$result the result of the validation<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="alpha_numeric" id="_alpha_numeric">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_alpha_numeric">#</a>
+			<code><a href="source-class-TribeValidate.html#123-137" title="Go to source code">alpha_numeric</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as a string containing only letters and numbers</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as a string containing only letters and numbers</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.7<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="alpha_numeric_multi_line" id="_alpha_numeric_multi_line">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_alpha_numeric_multi_line">#</a>
+			<code><a href="source-class-TribeValidate.html#139-155" title="Go to source code">alpha_numeric_multi_line</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as a string containing only letters, numbers and carriage
+returns</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as a string containing only letters, numbers and carriage
+returns</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.7<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="alpha_numeric_multi_line_with_dots_and_dashes" id="_alpha_numeric_multi_line_with_dots_and_dashes">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_alpha_numeric_multi_line_with_dots_and_dashes">#</a>
+			<code><a href="source-class-TribeValidate.html#157-173" title="Go to source code">alpha_numeric_multi_line_with_dots_and_dashes</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as a string containing only letters, numbers, dots and
+carriage returns</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as a string containing only letters, numbers, dots and
+carriage returns</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.7<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="positive_int" id="_positive_int">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_positive_int">#</a>
+			<code><a href="source-class-TribeValidate.html#175-189" title="Go to source code">positive_int</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being positive integers</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being positive integers</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="slug" id="_slug">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_slug">#</a>
+			<code><a href="source-class-TribeValidate.html#191-206" title="Go to source code">slug</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates &amp; sanitizes fields as URL slugs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates &amp; sanitizes fields as URL slugs</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="url" id="_url">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_url">#</a>
+			<code><a href="source-class-TribeValidate.html#208-223" title="Go to source code">url</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates &amp; sanitizes fields as URLs</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates &amp; sanitizes fields as URLs</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish, nciske<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="options" id="_options">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_options">#</a>
+			<code><a href="source-class-TribeValidate.html#225-241" title="Go to source code">options</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates fields that have options (radios, dropdowns, etc.) by making sure
+the value is part of the options array</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates fields that have options (radios, dropdowns, etc.) by making sure
+the value is part of the options array</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="options_multi" id="_options_multi">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_options_multi">#</a>
+			<code><a href="source-class-TribeValidate.html#243-261" title="Go to source code">options_multi</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates fields that have multiple options (checkbox list, etc.) by making
+sure the value is part of the options array</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates fields that have multiple options (checkbox list, etc.) by making
+sure the value is part of the options array</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish, nciske<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="options_with_label" id="_options_with_label">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_options_with_label">#</a>
+			<code><a href="source-class-TribeValidate.html#263-281" title="Go to source code">options_with_label</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates fields that have options (radios, dropdowns, etc.) by making sure
+the value is part of the options array then combines the value into an array
+containg the value and name from the option</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates fields that have options (radios, dropdowns, etc.) by making sure
+the value is part of the options array then combines the value into an array
+containg the value and name from the option</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cannot_be_the_same_as" id="_cannot_be_the_same_as">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_cannot_be_the_same_as">#</a>
+			<code><a href="source-class-TribeValidate.html#283-308" title="Go to source code">cannot_be_the_same_as</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as not being able to be the same as the specified value as
+specified in $this-&gt;additional_args['compare_name']</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as not being able to be the same as the specified value as
+specified in $this-&gt;additional_args['compare_name']</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="number_or_percent" id="_number_or_percent">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_number_or_percent">#</a>
+			<code><a href="source-class-TribeValidate.html#310-324" title="Go to source code">number_or_percent</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being a number or a percentage</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being a number or a percentage</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="html" id="_html">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_html">#</a>
+			<code><a href="source-class-TribeValidate.html#326-336" title="Go to source code">html</a>( )</code>
+
+			<div class="description short">
+				
+<p>sanitizes an html field</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sanitizes an html field</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="license_key" id="_license_key">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_license_key">#</a>
+			<code><a href="source-class-TribeValidate.html#338-348" title="Go to source code">license_key</a>( )</code>
+
+			<div class="description short">
+				
+<p>sanitizes a license key</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sanitizes a license key</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="textarea" id="_textarea">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_textarea">#</a>
+			<code><a href="source-class-TribeValidate.html#350-360" title="Go to source code">textarea</a>( )</code>
+
+			<div class="description short">
+				
+<p>sanitizes a textarea field</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sanitizes a textarea field</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="boolean" id="_boolean">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_boolean">#</a>
+			<code><a href="source-class-TribeValidate.html#362-372" title="Go to source code">boolean</a>( )</code>
+
+			<div class="description short">
+				
+<p>sanitizes a field as beeing a boolean</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sanitizes a field as beeing a boolean</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="google_maps_zoom" id="_google_maps_zoom">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_google_maps_zoom">#</a>
+			<code><a href="source-class-TribeValidate.html#374-388" title="Go to source code">google_maps_zoom</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a Google Maps Zoom field</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a Google Maps Zoom field</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="address" id="_address">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_address">#</a>
+			<code><a href="source-class-TribeValidate.html#390-406" title="Go to source code">address</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being part of an address allows for letters, numbers,
+dashses and spaces only</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being part of an address allows for letters, numbers,
+dashses and spaces only</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="city_or_province" id="_city_or_province">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_city_or_province">#</a>
+			<code><a href="source-class-TribeValidate.html#408-424" title="Go to source code">city_or_province</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being a city or province allows for letters, dashses and
+spaces only</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being a city or province allows for letters, dashses and
+spaces only</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="zip" id="_zip">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_zip">#</a>
+			<code><a href="source-class-TribeValidate.html#426-440" title="Go to source code">zip</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being a zip code</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being a zip code</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="phone" id="_phone">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_phone">#</a>
+			<code><a href="source-class-TribeValidate.html#442-456" title="Go to source code">phone</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates a field as being a phone number</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates a field as being a phone number</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="country_list" id="_country_list">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_country_list">#</a>
+			<code><a href="source-class-TribeValidate.html#458-479" title="Go to source code">country_list</a>( )</code>
+
+			<div class="description short">
+				
+<p>validates &amp; sanitizes a field as being a country list</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>validates &amp; sanitizes a field as being a country list</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="none" id="_none">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-stdClass.html">stdClass</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_none">#</a>
+			<code><a href="source-class-TribeValidate.html#481-491" title="Go to source code">none</a>( )</code>
+
+			<div class="description short">
+				
+<p>automatically validate a field regardless of the value Don't use this unless
+you know what you are doing</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>automatically validate a field regardless of the value Don't use this unless
+you know what you are doing</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-stdClass.html">stdClass</a></code></code><br>validation result object<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							jkudish<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							2.0.5<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="field" id="$field">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#16-20" title="Go to source code"><var>$field</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$field" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the field object to validate</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the field object to validate</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="value" id="$value">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#22-26" title="Go to source code"><var>$value</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$value" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the field's value</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the field's value</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="additional_args" id="$additional_args">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#28-33" title="Go to source code"><var>$additional_args</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$additional_args" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>additional arguments for validation used by some methods only</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>additional arguments for validation used by some methods only</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="label" id="$label">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#36-40" title="Go to source code"><var>$label</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$label" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the field's label, used in error messages</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the field's label, used in error messages</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="type" id="$type">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#42-46" title="Go to source code"><var>$type</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$type" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the type of validation to perform</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the type of validation to perform</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="result" id="$result">
+			<td class="attributes"><code>
+				public  
+				<code><a href="class-stdClass.html">stdClass</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeValidate.html#49-53" title="Go to source code"><var>$result</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$result" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the result object of the validation</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the result object of the validation</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

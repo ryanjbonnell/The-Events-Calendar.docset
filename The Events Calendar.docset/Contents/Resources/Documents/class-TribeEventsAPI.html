@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsAPI | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsAPI</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsAPI.html#10-387" title="Go to source code">lib/tribe-event-api.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="createEvent" id="_createEvent">
+
+			<td class="attributes"><code>
+				 public static
+				|integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createEvent">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#19-34" title="Go to source code">createEvent</a>( <span>array <var>$args</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Create a new event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Create a new event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args The post args.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>|integer</code><br>The created event ID.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="updateEvent" id="_updateEvent">
+
+			<td class="attributes"><code>
+				 public static
+				false|integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_updateEvent">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#36-54" title="Go to source code">updateEvent</a>( <span>integer <var>$eventId</var></span>, <span>array <var>$args</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Update an existing event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Update an existing event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$eventId</var></dt>
+						<dd><code>integer</code><br>$eventId The event ID to update.</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args The post args.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>false|integer</code><br>The event ID.<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="deleteEvent" id="_deleteEvent">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_deleteEvent">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#56-65" title="Go to source code">deleteEvent</a>( <span>integer <var>$eventId</var></span>, <span>boolean <var>$force_delete</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Delete an event - all instances if recurring</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Delete an event - all instances if recurring</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$eventId</var></dt>
+						<dd><code>integer</code><br>$eventId The Event ID to delete.</dd>
+						<dt><var>$force_delete</var></dt>
+						<dd><code>boolean</code><br>$force_delete Same as the WP parameter.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saveEventMeta" id="_saveEventMeta">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saveEventMeta">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#67-163" title="Go to source code">saveEventMeta</a>( <span>integer <var>$event_id</var></span>, <span>array <var>$data</var></span>, <span>WP_Post <var>$event</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Used by createEvent and updateEvent - saves all the various event meta</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Used by createEvent and updateEvent - saves all the various event meta</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>integer</code><br>$event_id The event ID we are modifying meta for.</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data The meta fields we want saved.</dd>
+						<dt><var>$event</var></dt>
+						<dd><code>WP_Post</code><br>The event itself.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="createOrganizer" id="_createOrganizer">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createOrganizer">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#211-237" title="Go to source code">createOrganizer</a>( <span>array <var>$data</var></span>, <span>string <var>$post_status</var> = <span class="php-quote">'publish'</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Creates a new organizer</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Creates a new organizer</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data The organizer data.</dd>
+						<dt><var>$post_status</var></dt>
+						<dd><code>string</code><br>$post_status the intended post status.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="deleteOrganizer" id="_deleteOrganizer">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_deleteOrganizer">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#253-262" title="Go to source code">deleteOrganizer</a>( <span>integer <var>$organizerId</var></span>, <span>boolean <var>$force_delete</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Deletes an organizer</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Deletes an organizer</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$organizerId</var></dt>
+						<dd><code>integer</code><br>$organizerId The organizer ID to delete.</dd>
+						<dt><var>$force_delete</var></dt>
+						<dd><code>boolean</code><br>$force_delete Same as WP param.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="updateOrganizer" id="_updateOrganizer">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_updateOrganizer">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#264-274" title="Go to source code">updateOrganizer</a>( <span>integer <var>$organizerId</var></span>, <span>array <var>$data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Updates an organizer</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Updates an organizer</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$organizerId</var></dt>
+						<dd><code>integer</code><br>$organizerId The organizer ID to update.</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data The organizer data.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="createVenue" id="_createVenue">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createVenue">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#289-315" title="Go to source code">createVenue</a>( <span>array <var>$data</var></span>, <span>string <var>$post_status</var> = <span class="php-quote">'publish'</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Creates a new venue</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Creates a new venue</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data The venue data.</dd>
+						<dt><var>$post_status</var></dt>
+						<dd><code>string</code><br>$post_status the intended post status.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="updateVenue" id="_updateVenue">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_updateVenue">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#331-344" title="Go to source code">updateVenue</a>( <span>integer <var>$venueId</var></span>, <span>array <var>$data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Updates an venue</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Updates an venue</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$venueId</var></dt>
+						<dd><code>integer</code><br>$venueId The venue ID to update.</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data The venue data.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="deleteVenue" id="_deleteVenue">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_deleteVenue">#</a>
+			<code><a href="source-class-TribeEventsAPI.html#346-355" title="Go to source code">deleteVenue</a>( <span>integer <var>$venueId</var></span>, <span>boolean <var>$force_delete</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Deletes a venue</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Deletes a venue</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$venueId</var></dt>
+						<dd><code>integer</code><br>$venueId The venue ID to delete.</dd>
+						<dt><var>$force_delete</var></dt>
+						<dd><code>boolean</code><br>$force_delete Same as WP param.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="valid_venue_keys" id="$valid_venue_keys">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsAPI.html#11-13" title="Go to source code"><var>$valid_venue_keys</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$valid_venue_keys" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="valid_organizer_keys" id="$valid_organizer_keys">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsAPI.html#15-17" title="Go to source code"><var>$valid_organizer_keys</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$valid_organizer_keys" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsBar | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsBar</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsBar.html#2-170" title="Go to source code">lib/tribe-events-bar.class.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeEventsBar.html#16-30" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				
+<p>Class constructor.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Class constructor.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="should_show" id="_should_show">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_should_show">#</a>
+			<code><a href="source-class-TribeEventsBar.html#32-49" title="Go to source code">should_show</a>( )</code>
+
+			<div class="description short">
+				
+<p>Decide if the TribeBar should be shown in a particular pageview.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Decide if the TribeBar should be shown in a particular pageview.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+					<h4>Filter</h4>
+					<div class="list">
+							tribe-events-bar-views to get all the registred views that the Bar will show<br />
+							tribe-events-bar-should-show to allow themers to always hide the bar if they
+want. To always hide the Bar, add this to your theme's functions.php:
+add_filter( 'tribe-events-bar-should-show', '__return_false' );<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="show" id="_show">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_show">#</a>
+			<code><a href="source-class-TribeEventsBar.html#51-99" title="Go to source code">show</a>( <span>mixed <var>$content</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Add the Tribe Bar to the tribe_events_before_html filter.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add the Tribe Bar to the tribe_events_before_html filter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$content</var></dt>
+						<dd><code>mixed</code><br>$content</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Filter</h4>
+					<div class="list">
+							tribe-events-bar-should-show set it to false to prevent infinite nesting<br />
+							tribe-events-bar-filters to get the list of registered filters<br />
+							tribe-events-bar-views to get the list of registered views To add filters:
+add_filter( 'tribe-events-bar-filters', 'setup_my_field_in_bar', 1, 1 ); public
+function setup_my_field_in_bar( $filters ) { $filters[] = array( 'name' =&gt;
+'tribe-bar-my-field', 'caption' =&gt; 'My Field', 'html' =&gt; '&lt;input
+type="text" name="tribe-bar-my-field" id="tribe-bar-my-field"&gt;' ); return
+$filters; } To add views: add_filter( 'tribe-events-bar-views',
+'my_setup_view_for_bar', 10); public function my_setup_view_for_bar( $views ) {
+$tec = TribeEvents::instance(); $views[] = array('displaying' =&gt; 'myview',
+'anchor' =&gt; 'My view', 'url' =&gt; $tec-&gt;getOption( 'eventsSlug', 'events'
+) . '/my_view_slug' ); return $views; }<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="body_class" id="_body_class">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_body_class">#</a>
+			<code><a href="source-class-TribeEventsBar.html#102-114" title="Go to source code">body_class</a>( <span>mixed <var>$classes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Adds a body class of tribe-bar-is-disabled when the Tribe Bar is
+disabled.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Adds a body class of tribe-bar-is-disabled when the Tribe Bar is
+disabled.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The new body class array<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Kyle Unzicker<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="disabled_bar_before" id="_disabled_bar_before">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_disabled_bar_before">#</a>
+			<code><a href="source-class-TribeEventsBar.html#116-128" title="Go to source code">disabled_bar_before</a>( <span>mixed <var>$before</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the opening tag of the disabled bar wrapper</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the opening tag of the disabled bar wrapper</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Kyle Unzicker<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="disabled_bar_after" id="_disabled_bar_after">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_disabled_bar_after">#</a>
+			<code><a href="source-class-TribeEventsBar.html#130-142" title="Go to source code">disabled_bar_after</a>( <span>mixed <var>$after</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the closing tag of the disabled bar wrapper</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the closing tag of the disabled bar wrapper</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>The new body class array<br />
+					</div>
+
+
+					<h4>Author</h4>
+					<div class="list">
+							Kyle Unzicker<br />
+					</div>
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br />
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="load_script" id="_load_script">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_load_script">#</a>
+			<code><a href="source-class-TribeEventsBar.html#144-156" title="Go to source code">load_script</a>( )</code>
+
+			<div class="description short">
+				
+<p>Load the CSSs and JSs only if the Bar will be shown</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Load the CSSs and JSs only if the Bar will be shown</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="instance" id="_instance">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-TribeEventsBar.html">TribeEventsBar</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_instance">#</a>
+			<code><a href="source-class-TribeEventsBar.html#158-168" title="Go to source code">instance</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-TribeEventsBar.html">TribeEventsBar</a></code></code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

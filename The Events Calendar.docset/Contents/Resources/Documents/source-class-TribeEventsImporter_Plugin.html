@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File lib/io/csv/classes/TribeEventsImporter_Plugin.php | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<pre id="source"><code><span id="1" class="l"><a class="l" href="#1"> 1 </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2 </a>
+</span><span id="3" class="l"><a class="l" href="#3"> 3 </a><span class="php-comment">/**
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4 </a><span class="php-comment"> * Class TribeEventsImporter_Plugin
+</span></span><span id="5" class="l"><a class="l" href="#5"> 5 </a><span class="php-comment"> */</span>
+</span><span id="6" class="l"><a class="l" href="#6"> 6 </a><span class="php-keyword1">class</span> <a id="TribeEventsImporter_Plugin" href="#TribeEventsImporter_Plugin">TribeEventsImporter_Plugin</a> {
+</span><span id="7" class="l"><a class="l" href="#7"> 7 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">static</span> <span class="php-var"><a id="$plugin_basename" href="#$plugin_basename">$plugin_basename</a></span> = <span class="php-quote">''</span>;
+</span><span id="8" class="l"><a class="l" href="#8"> 8 </a>    <span class="php-comment">/** @var TribeEventsImporter_AdminPage */</span>
+</span><span id="9" class="l"><a class="l" href="#9"> 9 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">static</span> <span class="php-var"><a id="$admin" href="#$admin">$admin</a></span> = <span class="php-keyword1">NULL</span>;
+</span><span id="10" class="l"><a class="l" href="#10">10 </a>
+</span><span id="11" class="l"><a class="l" href="#11">11 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_path" href="#_path">path</a>( <span class="php-var">$path</span> ) {
+</span><span id="12" class="l"><a class="l" href="#12">12 </a>        <span class="php-var">$base</span> = <span class="php-keyword2">dirname</span>(<span class="php-keyword2">dirname</span>(__FILE__));
+</span><span id="13" class="l"><a class="l" href="#13">13 </a>        <span class="php-var">$path</span> = <span class="php-var">$base</span> . DIRECTORY_SEPARATOR . <span class="php-var">$path</span>;
+</span><span id="14" class="l"><a class="l" href="#14">14 </a>        <span class="php-keyword1">return</span> untrailingslashit(<span class="php-var">$path</span>);
+</span><span id="15" class="l"><a class="l" href="#15">15 </a>    }
+</span><span id="16" class="l"><a class="l" href="#16">16 </a>
+</span><span id="17" class="l"><a class="l" href="#17">17 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_set_plugin_basename" href="#_set_plugin_basename">set_plugin_basename</a>( <span class="php-var">$basename</span> ) {
+</span><span id="18" class="l"><a class="l" href="#18">18 </a>        self::<span class="php-var">$plugin_basename</span> = <span class="php-var">$basename</span>;
+</span><span id="19" class="l"><a class="l" href="#19">19 </a>    }
+</span><span id="20" class="l"><a class="l" href="#20">20 </a>
+</span><span id="21" class="l"><a class="l" href="#21">21 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_initialize_admin" href="#_initialize_admin">initialize_admin</a>() {
+</span><span id="22" class="l"><a class="l" href="#22">22 </a>        self::<span class="php-var">$admin</span> = <span class="php-keyword1">new</span> TribeEventsImporter_AdminPage();
+</span><span id="23" class="l"><a class="l" href="#23">23 </a>        add_action( <span class="php-quote">'admin_menu'</span>, <span class="php-keyword1">array</span>( self::<span class="php-var">$admin</span>, <span class="php-quote">'register_admin_page'</span> ) );
+</span><span id="24" class="l"><a class="l" href="#24">24 </a>        add_action( <span class="php-quote">'load-tribe_events_page_events-importer'</span>, <span class="php-keyword1">array</span>( self::<span class="php-var">$admin</span>, <span class="php-quote">'handle_submission'</span> ) );
+</span><span id="25" class="l"><a class="l" href="#25">25 </a>    }
+</span><span id="26" class="l"><a class="l" href="#26">26 </a>
+</span><span id="27" class="l"><a class="l" href="#27">27 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_get_admin_object" href="#_get_admin_object">get_admin_object</a>() {
+</span><span id="28" class="l"><a class="l" href="#28">28 </a>        <span class="php-keyword1">return</span> self::<span class="php-var">$admin</span>;
+</span><span id="29" class="l"><a class="l" href="#29">29 </a>    }
+</span><span id="30" class="l"><a class="l" href="#30">30 </a>}
+</span><span id="31" class="l"><a class="l" href="#31">31 </a></span></code></pre>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

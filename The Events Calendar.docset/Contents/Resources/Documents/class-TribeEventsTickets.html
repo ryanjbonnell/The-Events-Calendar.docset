@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class TribeEventsTickets | The Events Calendar</title>
+
+	<script type="text/javascript" src="resources/combined.js?1359592082"></script>
+	<script type="text/javascript" src="elementlist.js?2361222254"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class TribeEventsTickets</h1>
+
+
+	<div class="description">
+	
+<p>Abstract class with the API definition and common functionality for Tribe
+Tickets Pro. Providers for this functionality need to extend this class. For a
+functional example of how this works see Tribe WooTickets.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Abstract</b><br />
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-TribeEventsTickets.html#4-599" title="Go to source code">lib/tickets/tribe-tickets.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="get_event_reports_link" id="_get_event_reports_link">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_reports_link">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#57-66" title="Go to source code">get_event_reports_link</a>( <span>mixed <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns link to the report interface for sales for an event or null if the
+provider doesn't have reporting capabilities.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns link to the report interface for sales for an event or null if the
+provider doesn't have reporting capabilities.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_ticket_reports_link" id="_get_ticket_reports_link">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_ticket_reports_link">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#68-79" title="Go to source code">get_ticket_reports_link</a>( <span>mixed <var>$event_id</var></span>, <span>mixed <var>$ticket_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns link to the report interface for sales for a single ticket or null if
+the provider doesn't have reporting capabilities.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns link to the report interface for sales for a single ticket or null if
+the provider doesn't have reporting capabilities.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+						<dt><var>$ticket_id</var></dt>
+						<dd><code>mixed</code><br>$ticket_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_ticket" id="_get_ticket">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_ticket">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#81-91" title="Go to source code">get_ticket</a>( <span>mixed <var>$event_id</var></span>, <span>mixed <var>$ticket_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns a single ticket</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a single ticket</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+						<dt><var>$ticket_id</var></dt>
+						<dd><code>mixed</code><br>$ticket_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="delete_ticket" id="_delete_ticket">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_delete_ticket">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#93-103" title="Go to source code">delete_ticket</a>( <span>mixed <var>$event_id</var></span>, <span>mixed <var>$ticket_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Deletes a ticket</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Deletes a ticket</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+						<dt><var>$ticket_id</var></dt>
+						<dd><code>mixed</code><br>$ticket_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="save_ticket" id="_save_ticket">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_save_ticket">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#105-116" title="Go to source code">save_ticket</a>( <span>integer <var>$event_id</var></span>, <span>integer <var>$ticket</var></span>, <span>array <var>$raw_data</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+			<div class="description short">
+				
+<p>Saves a ticket</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Saves a ticket</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>integer</code><br>$event_id</dd>
+						<dt><var>$ticket</var></dt>
+						<dd><code>integer</code><br>$ticket</dd>
+						<dt><var>$raw_data</var></dt>
+						<dd><code>array</code><br>$raw_data</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_tickets" id="_get_tickets">
+
+			<td class="attributes"><code>
+				abstract protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_tickets">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#118-127" title="Go to source code">get_tickets</a>( <span>integer <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Get all the tickets for an event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get all the tickets for an event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>integer</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>mixed<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_attendees" id="_get_attendees">
+
+			<td class="attributes"><code>
+				abstract protected 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_attendees">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#129-137" title="Go to source code">get_attendees</a>( <span>mixed <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Get all the attendees (sold tickets) for an event</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get all the attendees (sold tickets) for an event</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkin" id="_checkin">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_checkin">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#139-148" title="Go to source code">checkin</a>( <span>mixed <var>$attendee_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Mark an attendee as checked in</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Mark an attendee as checked in</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$attendee_id</var></dt>
+						<dd><code>mixed</code><br>$attendee_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="uncheckin" id="_uncheckin">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_uncheckin">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#150-159" title="Go to source code">uncheckin</a>( <span>mixed <var>$attendee_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Mark an attendee as not checked in</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Mark an attendee as not checked in</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$attendee_id</var></dt>
+						<dd><code>mixed</code><br>$attendee_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="do_metabox_advanced_options" id="_do_metabox_advanced_options">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_do_metabox_advanced_options">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#162-174" title="Go to source code">do_metabox_advanced_options</a>( <span>mixed <var>$event_id</var></span>, <span>mixed <var>$ticket_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Renders the advanced fields in the new/edit ticket form. Using the method,
+providers can add as many fields as they want, specific to their
+implementation.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Renders the advanced fields in the new/edit ticket form. Using the method,
+providers can add as many fields as they want, specific to their
+implementation.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+						<dt><var>$ticket_id</var></dt>
+						<dd><code>mixed</code><br>$ticket_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="front_end_tickets_form" id="_front_end_tickets_form">
+
+			<td class="attributes"><code>
+				abstract public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_front_end_tickets_form">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#176-185" title="Go to source code">front_end_tickets_form</a>( <span>mixed <var>$content</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Renders the front end form for selling tickets in the event single page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Renders the front end form for selling tickets in the event single page</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$content</var></dt>
+						<dd><code>mixed</code><br>$content</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_price_html" id="_get_price_html">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_price_html">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#187-195" title="Go to source code">get_price_html</a>( <span>object|integer <var>$product</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the markup for the price field (it may contain the user selected
+currency, etc)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the markup for the price field (it may contain the user selected
+currency, etc)</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$product</var></dt>
+						<dd><code>object|integer</code><br>$product</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_instance" id="_get_instance">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_instance">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#197-204" title="Go to source code">get_instance</a>( )</code>
+
+			<div class="description short">
+				
+<p>Returns instance of the child class (singleton)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns instance of the child class (singleton)</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#208-238" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_handler_ticket_add" id="_ajax_handler_ticket_add">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_handler_ticket_add">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#243-302" title="Go to source code">ajax_handler_ticket_add</a>( )</code>
+
+			<div class="description short">
+				
+<p>Sanitizes the data for the new/edit ticket ajax call,<br />
+and calls the child save_ticket function.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sanitizes the data for the new/edit ticket ajax call, and calls the child
+save_ticket function.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_handler_attendee_checkin" id="_ajax_handler_attendee_checkin">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_handler_attendee_checkin">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#305-325" title="Go to source code">ajax_handler_attendee_checkin</a>( )</code>
+
+			<div class="description short">
+				
+<p>Handles the check-in ajax call, and calls the<br />
+checkin method.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handles the check-in ajax call, and calls the checkin method.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_handler_attendee_uncheckin" id="_ajax_handler_attendee_uncheckin">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_handler_attendee_uncheckin">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#327-348" title="Go to source code">ajax_handler_attendee_uncheckin</a>( )</code>
+
+			<div class="description short">
+				
+<p>Handles the check-in ajax call, and calls the<br />
+uncheckin method.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Handles the check-in ajax call, and calls the uncheckin method.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_handler_ticket_delete" id="_ajax_handler_ticket_delete">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_handler_ticket_delete">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#350-379" title="Go to source code">ajax_handler_ticket_delete</a>( )</code>
+
+			<div class="description short">
+				
+<p>Sanitizes the data for the delete ticket ajax call,<br />
+and calls the child delete_ticket function.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sanitizes the data for the delete ticket ajax call, and calls the child
+delete_ticket function.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_handler_ticket_edit" id="_ajax_handler_ticket_edit">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_handler_ticket_edit">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#381-408" title="Go to source code">ajax_handler_ticket_edit</a>( )</code>
+
+			<div class="description short">
+				
+<p>Returns the data from a single ticket to populate the edit form.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the data from a single ticket to populate the edit form.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="notice" id="_notice">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_notice">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#411-419" title="Go to source code">notice</a>( <span>string <var>$msg</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the markup for a notice in the admin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the markup for a notice in the admin</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$msg</var></dt>
+						<dd><code>string</code><br>$msg Text for the notice</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>Notice with markup<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_event_attendees" id="_get_event_attendees">
+
+			<td class="attributes"><code>
+				final public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_attendees">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#426-442" title="Go to source code">get_event_attendees</a>( <span>mixed <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns all the attendees for an event. Queries all registered providers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns all the attendees for an event. Queries all registered providers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_event_checkedin_attendees_count" id="_get_event_checkedin_attendees_count">
+
+			<td class="attributes"><code>
+				final public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_checkedin_attendees_count">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#444-456" title="Go to source code">get_event_checkedin_attendees_count</a>( <span>mixed <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns the sum of all checked-in attendees for an event. Queries all
+registered providers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the sum of all checked-in attendees for an event. Queries all
+registered providers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tr_class" id="_tr_class">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_tr_class">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#493-498" title="Go to source code">tr_class</a>( )</code>
+
+			<div class="description short">
+				
+<p>Echos the class for the &lt;tr&gt; in the tickets list admin</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Echos the class for the &lt;tr&gt; in the tickets list admin</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="modules" id="_modules">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_modules">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#500-508" title="Go to source code">modules</a>( )</code>
+
+			<div class="description short">
+				
+<p>Returns the array of active modules/providers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns the array of active modules/providers.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_event_tickets" id="_get_event_tickets">
+
+			<td class="attributes"><code>
+				final public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_event_tickets">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#510-529" title="Go to source code">get_event_tickets</a>( <span>mixed <var>$event_id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Get all the tickets for an event. Queries all active modules/providers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get all the tickets for an event. Queries all active modules/providers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$event_id</var></dt>
+						<dd><code>mixed</code><br>$event_id</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_error" id="_ajax_error">
+
+			<td class="attributes"><code>
+				final protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_error">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#531-541" title="Go to source code">ajax_error</a>( <span>string <var>$message</var> = <span class="php-quote">&quot;&quot;</span> </span> )</code>
+
+			<div class="description short">
+				
+<p>Sets an AJAX error, returns a JSON array and ends the execution.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sets an AJAX error, returns a JSON array and ends the execution.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd><code>string</code><br>$message</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ajax_ok" id="_ajax_ok">
+
+			<td class="attributes"><code>
+				final protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_ajax_ok">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#543-561" title="Go to source code">ajax_ok</a>( <span>mixed <var>$data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Sets an AJAX response, returns a JSON array and ends the execution.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Sets an AJAX response, returns a JSON array and ends the execution.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>mixed</code><br>$data</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generate_tickets_email_content" id="_generate_tickets_email_content">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generate_tickets_email_content">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#563-575" title="Go to source code">generate_tickets_email_content</a>( <span>mixed <var>$tickets</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Generates and returns the email template for a group of attendees.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Generates and returns the email template for a group of attendees.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tickets</var></dt>
+						<dd><code>mixed</code><br>$tickets</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTemplateHierarchy" id="_getTemplateHierarchy">
+
+			<td class="attributes"><code>
+				 public 
+				mixed|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTemplateHierarchy">#</a>
+			<code><a href="source-class-TribeEventsTickets.html#577-597" title="Go to source code">getTemplateHierarchy</a>( <span>mixed <var>$template</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Gets the view from the plugin's folder, or from the user's theme if
+found.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Gets the view from the plugin's folder, or from the user's theme if
+found.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$template</var></dt>
+						<dd><code>mixed</code><br>$template</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed|</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="active_modules" id="$active_modules">
+			<td class="attributes"><code>
+				protected static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTickets.html#12-16" title="Go to source code"><var>$active_modules</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$active_modules" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>All TribeEventsTickets api consumers. It's static, so it's shared across all
+child.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>All TribeEventsTickets api consumers. It's static, so it's shared across all
+child.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="className" id="$className">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTickets.html#18-22" title="Go to source code"><var>$className</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$className" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Name of this class. Note that it refers to the child class.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Name of this class. Note that it refers to the child class.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginName" id="$pluginName">
+			<td class="attributes"><code>
+				public  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTickets.html#39-43" title="Go to source code"><var>$pluginName</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginName" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Name of the provider</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Name of the provider</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginPath" id="$pluginPath">
+			<td class="attributes"><code>
+				protected  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTickets.html#45-49" title="Go to source code"><var>$pluginPath</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginPath" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Path of the child class</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Path of the child class</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pluginUrl" id="$pluginUrl">
+			<td class="attributes"><code>
+				protected  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-TribeEventsTickets.html#51-55" title="Go to source code"><var>$pluginUrl</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$pluginUrl" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>URL of the child class</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>URL of the child class</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		The Events Calendar API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>
